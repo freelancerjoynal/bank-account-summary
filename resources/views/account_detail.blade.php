@@ -3716,9 +3716,9 @@
                                                                                 <span>Pending withdrawals/debits</span>
                                                                             </span>
                                                                             <span class="Activity__balance___tGGaO">
-                                                                                <sup>$</sup>
+                                                                              
                                                                             
-                                                                                {{$pendingCredits}}
+                                                                                <sup>$</sup>0.00 </span>
                                                                             </span>
                                                                         </li>
                                                                         <li
@@ -3727,7 +3727,12 @@
                                                                                 <span>Pending deposits/credits</span>
                                                                             </span>
                                                                             <span class="Activity__balance___tGGaO">
-                                                                                <sup>$</sup>0.00 </span>
+                                                                                
+                                                                                {{
+                                                                                number_format($pendingCredits, 2, ".",
+                                                                                ",")
+                                                                                
+                                                                                }}
                                                                         </li>
                                                                         <li
                                                                             class="Activity__activity___kh1JR Activity__desktop___H79Ck CheckingBalance__available-descriptor___NazjO CheckingBalance__desktop___xsdQC">
