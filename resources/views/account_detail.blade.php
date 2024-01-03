@@ -29,9 +29,40 @@
     <link rel="stylesheet" type="text/css"
         href="{{asset('assets/Account Detail _files/Details.fdf16417cef3c5b2d5b9.chunk.css')}}">
     <link href="./public/tailwind.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+        #loading-spinner {
+            position: absolute;
+            height: 100vh !important;
+            width: 100% !important;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #loading-spinner img {
+            width: 250px;
+        }        
+    </style>
+
+    <script>
+        $(window).on("load", function(){
+            setTimeout(function(){
+                $("#loading-spinner").fadeOut("slow");
+            }, 1400); // Wait for 2 seconds before hiding
+        });
+    </script>
 </head>
 
 <body class="viewport" data-block-scrolling="false" data-navigation-menu-open="false">
+    <div id="loading-spinner">
+        <img src="{{asset('/assets/icons/loading.gif')}}" alt="Loading...">
+    </div>
     <div class="viewport" id="root">
         <div data-app-container="" class="" style="display: flex; flex-flow: column; flex: 1 1 auto;">
             <div class="base__appWrapper___SzQ4S">
