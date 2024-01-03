@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AccountInformation;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -55,7 +56,7 @@ class HomeController extends Controller {
     public function all_account_detail() {
         $currentTime = time();
 
-        $userInfo = DB::select('
+        $userInfo = DB::select( '
             SELECT
                 users.id,
                 users.name,
@@ -73,7 +74,7 @@ class HomeController extends Controller {
                 account_informations.txn_time < :currentTime
             GROUP BY
                 users.id, users.name, users.email, users.ac_no
-        ', ['currentTime' => $currentTime]);
+        ', ['currentTime' => $currentTime] );
 //dd($userInfo);
         // Pass the data to the view
         return view( 'account_summary', ['userInfo' => $userInfo] );
@@ -115,7 +116,7 @@ class HomeController extends Controller {
             'category' => $category,
             'description'    => $description,
             'txn_date'       => $txn_date,
-            'txn_time'       => strtotime($txn_date),
+            'txn_time'       => strtotime( $txn_date ),
 
             'created_at'     => now(),
             'updated_at'     => now(),
@@ -172,60 +173,49 @@ class HomeController extends Controller {
 
     //account_details page
     public function user_accountDetails( $request_id ) {
-
-        // $userId = auth()->id();
         $userId = $request_id;
-        $userDetails = DB::table( 'users' )
-            ->select( 'name', 'email', 'ac_no' )
-            ->where( 'id', $userId )
+
+        // Retrieve user details using Eloquent with assumed relationship
+        $userDetails = AccountInformation::join( 'users', 'account_informations.account_holder', '=', 'users.id' )
+            ->select( 'users.name', 'users.email', 'users.ac_no' ) // Assuming 'ac_no' is in the 'users' table
+            ->where( 'account_informations.account_holder', $userId )
             ->first();
+
         $name = $userDetails->name;
         $email = $userDetails->email;
         $ac_no = $userDetails->ac_no;
 
         $currentTime = time();
-        
 
+        // Get the sum of credits for the upcoming transactions
+        $pendingCredits = AccountInformation::where( 'txn_time', '>', $currentTime )
+            ->sum( 'credits' );
 
-
-
-
-        $pendingCredits  = AccountInformation::where('txn_time', '>', $currentTime)->sum('credits');
-
-        
-
-        // Get the sum of credits and debits for the authenticated user :   AND DATE(txn_date) = CURDATE()
-        $userBalance = DB::select( "
-            SELECT
-                SUM(credits) as total_credits,
-                SUM(debits) as total_debits
-            FROM
-                account_informations
-            WHERE
-                account_holder = :userId 
-            AND
-                txn_time < $currentTime
-
-        ", ['userId' => $userId] );
+        // Get the sum of credits and debits for the user
+        $userBalance = AccountInformation::selectRaw( 'SUM(credits) as total_credits, SUM(debits) as total_debits' )
+            ->where( 'account_holder', $userId )
+            ->where( 'txn_time', '<', $currentTime )
+            ->first();
 
         // Access the calculated totals
-        $totalCredits = $userBalance[0]->total_credits ?? 0;
-        $totalDebits = $userBalance[0]->total_debits ?? 0;
+        $totalCredits = $userBalance->total_credits ?? 0;
+        $totalDebits = $userBalance->total_debits ?? 0;
         $availableBalance = $totalCredits - $totalDebits;
 
-        // Get all data for the authenticated user where txn_date is today
-        $userTransactions = DB::select( "
-            SELECT *
-            FROM account_informations
-            WHERE account_holder = :userId
+        // Paginate user transactions
+        $userTransactions = AccountInformation::where( 'account_holder', $userId )
+            ->paginate( 50 ); // Adjust the number based on your preference
 
-        ", ['userId' => $userId] );
-
-        //dd($userTransactions);
         // Pass the data to the view
-        return view( 'account_detail', ['name' => $name, 'ac_no' => $ac_no, 'totalCredits' => $totalCredits,  
-        'totalDebits' => $totalDebits, 'availableBalance' => $availableBalance, 'pendingCredits' => $pendingCredits,
-         'userTransactions' => $userTransactions] );
+        return view( 'account_detail', [
+            'name'             => $name,
+            'ac_no'            => $ac_no,
+            'totalCredits'     => $totalCredits,
+            'totalDebits'      => $totalDebits,
+            'availableBalance' => $availableBalance,
+            'pendingCredits'   => $pendingCredits,
+            'userTransactions' => $userTransactions,
+        ] );
     }
 
     public function createUser( Request $request ) {
