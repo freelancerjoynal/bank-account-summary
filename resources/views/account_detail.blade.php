@@ -3716,7 +3716,10 @@
                                                                                 <span>Pending withdrawals/debits</span>
                                                                             </span>
                                                                             <span class="Activity__balance___tGGaO">
-                                                                                <sup>$</sup>0.00 </span>
+                                                                                <sup>$</sup>
+                                                                            
+                                                                                {{$pendingCredits}}
+                                                                            </span>
                                                                         </li>
                                                                         <li
                                                                             class="Activity__activity___kh1JR Activity__desktop___H79Ck">

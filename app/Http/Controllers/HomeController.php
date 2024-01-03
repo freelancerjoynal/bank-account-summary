@@ -190,8 +190,7 @@ class HomeController extends Controller {
 
 
 
-        $modelTest = AccountInformation::get();
-
+        $pendingCredits  = AccountInformation::where('txn_time', '>', $currentTime)->sum('credits');
 
         
 
@@ -225,7 +224,7 @@ class HomeController extends Controller {
         //dd($userTransactions);
         // Pass the data to the view
         return view( 'account_detail', ['name' => $name, 'ac_no' => $ac_no, 'totalCredits' => $totalCredits,  
-        'totalDebits' => $totalDebits, 'availableBalance' => $availableBalance,
+        'totalDebits' => $totalDebits, 'availableBalance' => $availableBalance, 'pendingCredits' => $pendingCredits,
          'userTransactions' => $userTransactions] );
     }
 
