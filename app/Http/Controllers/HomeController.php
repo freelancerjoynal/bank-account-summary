@@ -204,6 +204,7 @@ class HomeController extends Controller {
 
         // Paginate user transactions
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
+            ->orderBy('id', 'desc')
             ->paginate( 50 ); // Adjust the number based on your preference
 
         // Pass the data to the view
