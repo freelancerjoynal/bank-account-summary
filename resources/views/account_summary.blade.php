@@ -2521,7 +2521,13 @@
                                                                                     role="link"><span
                                                                                         class="AccountInformation__amount-field___c2kaH AccountInformation__tile___e4Fi4 AccountInformation__desktop___OuMsx"
                                                                                         data-testid="BUSINESS CHECKING-balance"
-                                                                                        id="acc-c275aaab-32ce-4fc5-aa61-fd00105dff56-balance"><sup>$</sup>{{ $user->balance }}</span></button><span
+                                                                                        id="acc-c275aaab-32ce-4fc5-aa61-fd00105dff56-balance"><sup>$</sup>
+                                                                                        
+                                                                                        {{
+                                                                                            number_format($user->balance, 2, ".",
+                                                                                            ",") 
+                                                                                        }}
+                                                                                    </span></button><span
                                                                                     id=""
                                                                                     class="BalanceDescriptor__balanceDescriptor___X8k6k AccountBody__balance-descriptor___DsEt0 AccountBody__tile___CEwTO AccountBody__desktop___sOxdO"
                                                                                     data-testid="BUSINESS CHECKING-balance-descriptor"><span
