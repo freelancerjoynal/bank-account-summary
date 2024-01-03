@@ -1,0 +1,369 @@
+/*---------------------
+Initial Style
+---------------------*/
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#all-course{
+    margin-top: 80px;
+}
+
+
+/*---------------------
+Navigation Section Style
+---------------------*/
+#nav-bar{
+    padding: 10px 0;
+    /* min-height: 10vh; */
+}
+#nav-bar .navbar-brand img{
+    margin: 10px 10px;
+    max-height: 55px;
+}
+
+.navbar .category{
+    align-items: center;
+    color: #6ea33d;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 15px;
+    padding: 18px 0;
+    position: relative;
+}
+
+.navbar .category span i{
+    margin-left: 1rem !important;
+}
+
+.navbar .category .category-dropdown{
+    display: none;
+    left: 0;
+    min-width: 250px;
+    overflow-y: auto;
+    padding-top: 10px;
+    position: absolute;
+    top: 50px;
+    transition: .5s height cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar .category:hover .category-dropdown{
+    display: block;
+}
+
+.category .category-dropdown .category-list{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-width: 250px;
+}
+
+.category-dropdown .category-list ul li:hover a{
+    color: #6ea33d !important;
+}
+
+.navbar .navbar-search{
+    background-color: #f7f8fa;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    display: flex;
+    height: 38px;
+    position: relative;
+}
+
+.navbar .navbar-search .fa-search{
+    background-color: #6ea33d;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    height: 38px;
+    line-height: 38px;
+    margin: -1px;
+    text-align: center;
+    width: 38px;
+}
+
+.navbar .navbar-search input{
+    background-color: #f7f8fa;
+    border: none;
+    font-family: Noto Sans Bengali UI,Poppins-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+    min-width: 350px;
+    outline: none;
+}
+
+.navbar-search .speech-btn{
+    color: #cccccc;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px!important;
+    padding: 4.5px 8px;
+    text-align: center;
+    transition: all .4s;
+    width: 30px;
+}
+
+.navbar-search .speech-btn:hover {
+	background-color: #6ea33d;
+	border-color: #4a7e1b;
+	color: #f7f7f7;
+}
+
+.navbar .speech-input{
+    align-self: center;
+    color: #ccc;
+    font-size: 16px;
+    position: absolute;
+    right: 40px;
+}
+
+.navbar .right-navbar a,
+.category-dropdown .category-list ul li a{
+    color: #222;
+    display: inline-block;
+}
+
+.right-navbar .lang-change{
+    border: 1px solid #00c342;
+    cursor: pointer;
+    margin-left: 1.5rem;
+    border-radius: 5px;
+}
+
+.right-navbar .lang-change span{
+    padding: 0.3rem;
+}
+
+.right-navbar .lang-change .active-language{
+    background: #00c342;
+    color: #ffffff;
+}
+.btn-action{
+    background-color: #6ea33d;
+    border-radius: 5px;
+    color: #ffffff !important;
+}
+
+
+/*---------------------
+Banner Section Style
+---------------------*/
+.btn-action:hover{
+    background-color: #6ea33d !important;
+}
+
+.right-navbar li .signin-signup-btn a{
+    margin-left: 5px;
+}
+
+.slider-info{
+    font-size: 17px;
+    left: 10%;
+    line-height: 18px;
+    padding: 4px;
+    position: absolute;
+}
+
+.carousel-overlay {
+    position: relative;
+}
+
+.slider-info {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 30%;
+}
+
+
+/*---------------------
+News Section Style
+---------------------*/
+#latest-news .latest-news-title{
+    background-color: #6ea33d;
+}
+
+#latest-news a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #6ea33d;
+}
+
+#latest-news .latest-news-content,
+.category-dropdown .category-list ul li:hover{
+    background: #6ea33d17;
+}
+
+
+
+/*---------------------
+Popular Course Section Style
+---------------------*/
+#all-course .popular-course-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.scroll-tab-container{
+    white-space: nowrap;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.scroll-tab-container .left-arrow,
+.scroll-tab-container .right-arrow {
+    position: absolute;
+    overflow: hidden;
+    width: 100px;
+    top: 10px;
+    align-items: center;
+    padding: 0 10px;
+    display: none;
+}
+
+.scroll-tab-container .left-arrow:hover i,
+.scroll-tab-container .right-arrow:hover i{
+    background-color: #ffffff;
+}
+
+.scroll-tab-container .left-arrow.active-scroll,
+.scroll-tab-container .right-arrow.active-scroll {
+    display: flex;
+}
+
+.scroll-tab-container .left-arrow {
+    background: linear-gradient(to right, #ffffff, 50%, transparent);
+    left: 0;
+}
+
+.scroll-tab-container .right-arrow {
+    right: 0;
+    justify-content: flex-end;
+    background: linear-gradient(to left, #ffffff, 80%, transparent);
+}
+
+ul::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-tab-container i {
+    width: 24px;
+    padding: 8px;
+    cursor: pointer;
+    color: inherit;
+    position: relative;
+}
+
+.scroll-tab-container ul{
+    display: flex;
+    gap: 16px;
+    padding: 12px 24px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.scroll-tab-container ul li a{
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    color: #212529;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 28px;
+    margin-right: 1rem !important;
+    padding: 0 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tabactive{
+    background-color: #faf0f9 !important;
+    border-color: #6ea33d !important;
+    color: #6ea33d !important;
+    font-weight: 600 !important;
+}
+
+.course .card-img{
+    padding: 0 8px;
+    background-color: #dddddd;
+}
+
+.single-course .heading{
+    height: 30px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.single-course .logo img{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 60px;
+    margin-top: -30px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    padding: 5px;
+    position: absolute;
+}
+
+.single-course .price span{
+    color: #00c342;
+}
+
+.single-course .course-title{
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.text-overflow{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.single-course .partner{
+    color: #757575;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.single-course .footer-layer span{
+    color: #757575;
+    font-size: 12px;
+    padding: 0 3px;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/*================================================
+New Scroll tab style
+==================================================*/
