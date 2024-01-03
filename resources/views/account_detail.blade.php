@@ -4301,7 +4301,7 @@
                                                                         @php
                                          
                                                                         $currentTime = time() ;
-                                                                        $postedTime = strtotime($user->txn_date) +86400;
+                                                                        $postedTime = $user->txn_time;
                                                                         
                                                                         @endphp
                                                                         
@@ -4456,12 +4456,12 @@
                                                                         </tr>
                                                                         @forelse ($userTransactions as $i => $user)
                                                                         @php
-                                                                        $currentDate = new DateTime(now());
-                                                                        $postedDate = new DateTime($user->txn_date);
-                                                                        $interval = $currentDate->diff($postedDate);
+                                                                        $currentTime = time();
+                                                                        $postedTime = $user->txn_time;
+                                                                        
                                                                         @endphp
 
-                                                                        @if ($interval->h >= 24 || $interval->d > 0)
+                                                                        @if ($currentTime > $postedTime )
                                                                         <tr class="relative TransactionsRow__transaction-row___IjXn8"
                                                                             role="row" tabindex="0">
                                                                             <td
