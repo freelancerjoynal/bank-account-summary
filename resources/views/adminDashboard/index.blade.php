@@ -37,7 +37,8 @@
                     <td>{{ $user->ac_no }}</td>
                     <td>{{ $user->balance }}</td>
                     <!-- <td>{{ $user->total_credits }}</td> -->
-                    <td>
+                    <td class="d-flex gap-2">
+                        
                         <button type="button" value="{{ $user->id }}"
                             class="CreditsBtn btn btn-success btn-sm text-white" data-bs-toggle="modal"
                             data-bs-target="#creditsModal">
@@ -61,9 +62,8 @@
                             <button type="submit"
                                 class="detailsBtn btn btn-secondary btn-sm text-white m-2">Details</button>
                         </form>
-                        <!-- <button type="button" value="{{ $user->id }}" class="deleteBtn btn btn-danger btn-sm">
-                                <i class="fas fa-trash-alt"></i>
-                            </button> -->
+                        
+                        <a href="{{ route('account.delete', ['id' => $user->id]) }}" class="btn btn-sm btn-danger"onclick="return confirm('Are you sure to delte?')" >Delete</a>
                     </td>
                     <!-- Add more columns as needed -->
                 </tr>
