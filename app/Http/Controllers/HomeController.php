@@ -54,27 +54,26 @@ class HomeController extends Controller {
 
     public function all_account_detail() {
         $currentTime = time();
-        $userInfo = DB::select( '
-                SELECT
-                    users.id,
-                    users.name,
-                    users.email,
-                    users.ac_no,
-                    COALESCE(SUM(account_informations.credits), 0) as total_credits,
-                    COALESCE(SUM(account_informations.debits), 0) as total_debits,
-                    COALESCE(SUM(account_informations.credits), 0) - COALESCE(SUM(account_informations.debits), 0) AS balance
-                FROM
-                    users
-                LEFT JOIN
-                    account_informations ON users.id = account_informations.account_holder
-                    
-                WHERE
-                    users.role_as = 1
-                    
-                    
-                GROUP BY
-                    users.id, users.name, users.email, users.ac_no
-            ' );
+
+        $userInfo = DB::select('
+            SELECT
+                users.id,
+                users.name,
+                users.email,
+                users.ac_no,
+                COALESCE(SUM(account_informations.credits), 0) as total_credits,
+                COALESCE(SUM(account_informations.debits), 0) as total_debits,
+                COALESCE(SUM(account_informations.credits), 0) - COALESCE(SUM(account_informations.debits), 0) AS balance
+            FROM
+                users
+            LEFT JOIN
+                account_informations ON users.id = account_informations.account_holder
+            WHERE
+                users.role_as = 1 AND
+                account_informations.txn_time < :currentTime
+            GROUP BY
+                users.id, users.name, users.email, users.ac_no
+        ', ['currentTime' => $currentTime]);
 //dd($userInfo);
         // Pass the data to the view
         return view( 'account_summary', ['userInfo' => $userInfo] );
