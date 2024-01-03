@@ -1,0 +1,53 @@
+[33mcommit 11600ebe92e0ce82520f509752ca4570f15714f5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelopment/pending-transactions[m[33m, [m[1;31morigin/development/pending-transactions[m[33m)[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 20:23:39 2024 +0600
+
+    accout summary laoder done
+
+[33mcommit a7a8917a550bc85fa8383ac52191675060e70666[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 20:21:07 2024 +0600
+
+    account summary loader done
+
+[33mcommit 0905ab62596ca59166c5f2862d248e5ff365422f[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 18:37:10 2024 +0600
+
+    deposit/credite updated
+
+[33mcommit 63ae58e49a10840efc55f86d4325875494fe25be[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 18:31:41 2024 +0600
+
+    user delete done
+
+[33mcommit 9667313a9e4bbf79654a16715cac8ad813284c70[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 15:27:21 2024 +0600
+
+    pending and posted showing perfectly
+
+[33mcommit 1fb8525833c7ef3cec1f71491ded849373cf21bf[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 15:17:20 2024 +0600
+
+    In accout details page showing the pending ammout
+
+[33mcommit 9c4ddfc643d42424a617ccf3056f26a5f6a29bd5[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 15:10:52 2024 +0600
+
+    in account list page balance is showing based on current date
+
+[33mcommit d51df5d6792dd1bd5d3d3df4a8a6ba7073f691e1[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 15:08:39 2024 +0600
+
+    In account details total showing based on the current time
+
+[33mcommit 14b56b0b9da4f2750183c6ea8c6c840356f7aee0[m
+Author: Change_My_Password3 <developerjoynal@gmail.com>
+Date:   Wed Jan 3 12:25:30 2024 +0600
+
+    added all files

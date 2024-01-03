@@ -28,7 +28,7 @@
 
     <style>
         #loading-spinner {
-            position: absolute;
+            position: fixed;
             height: 100vh !important;
             width: 100% !important;
             top: 0;
