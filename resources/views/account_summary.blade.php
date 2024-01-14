@@ -2544,7 +2544,9 @@
                                                                                                     data-localized="account.number.ending.in"
                                                                                                     class="visuallyHidden">Account
                                                                                                     number ending
-                                                                                                    in</span>{{ $user->ac_no }}</span>
+                                                                                                    in</span>...
+                                                                                                    {{  substr($user->ac_no, -4) }}
+                                                                                                </span>
                                                                                         </a>
                                                                                     </button>
                                                                                 </div>
