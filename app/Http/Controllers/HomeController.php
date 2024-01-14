@@ -202,20 +202,30 @@ class HomeController extends Controller {
         $totalDebits = $userBalance->total_debits ?? 0;
         $availableBalance = $totalCredits - $totalDebits;
 
+        //Current time
+        $currentTime = time();
+
         // Paginate user transactions
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
-            ->orderBy('id', 'desc')
-            ->paginate( 50 ); // Adjust the number based on your preference
+            ->whereRaw( "UNIX_TIMESTAMP(txn_time) < $currentTime" ) // Convert varchar to timestamp
+            ->orderBy( 'id', 'desc' )
+            ->paginate( 50 );
+
+        // pending transaction
+        $pendingTransactions = AccountInformation::where( 'account_holder', $userId )
+            ->whereRaw( "UNIX_TIMESTAMP(txn_time) > $currentTime" ) // Convert varchar to timestamp
+            ->orderBy( 'id', 'desc' );
 
         // Pass the data to the view
         return view( 'account_detail', [
-            'name'             => $name,
-            'ac_no'            => $ac_no,
-            'totalCredits'     => $totalCredits,
-            'totalDebits'      => $totalDebits,
-            'availableBalance' => $availableBalance,
-            'pendingCredits'   => $pendingCredits,
-            'userTransactions' => $userTransactions,
+            'name'                => $name,
+            'ac_no'               => $ac_no,
+            'totalCredits'        => $totalCredits,
+            'totalDebits'         => $totalDebits,
+            'availableBalance'    => $availableBalance,
+            'pendingCredits'      => $pendingCredits,
+            'pendingTransactions' => $pendingTransactions,
+            'userTransactions'    => $userTransactions,
         ] );
     }
 

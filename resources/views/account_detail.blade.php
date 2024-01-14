@@ -4339,16 +4339,11 @@
 
 
 
-                                                                        @forelse ($userTransactions as $i => $user)
-                                                                        @php
-                                         
-                                                                        $currentTime = time() ;
-                                                                        $postedTime = $user->txn_time;
+                                                                        @forelse ($pendingTransactions as $i => $user)
                                                                         
-                                                                        @endphp
-                                                                        
+                                                                    
 
-                                                                        @if ($currentTime < $postedTime)
+                                                                        
                                                                         <tr class="relative TransactionsRow__transaction-row___IjXn8"
                                                                             role="row" tabindex="0">
                                                                             <td
@@ -4440,7 +4435,7 @@
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                        @endif
+                                                                        
 
                                                                         @empty
                                                                         <tr
@@ -4455,39 +4450,6 @@
                                                                             </td>
                                                                         </tr>
                                                                         @endforelse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                                         <tr role="row">
                                                                             <th class="PostedTransactions__postedTransactions___m6MKf"
                                                                                 colspan="5">
