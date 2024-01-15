@@ -25,6 +25,9 @@
             outline-offset: 2px !important;
             transition: none !important;
         }
+        .Tooltip__content___WpwfH {
+            z-index: 20 !important;
+        }
     </style>
     <link rel="stylesheet" type="text/css"
         href="{{asset('assets/Account Detail _files/Details.fdf16417cef3c5b2d5b9.chunk.css')}}">
@@ -39,17 +42,20 @@
             top: 0;
             left: 0;
             z-index: 99999;
-            background-color: white;
+            background-color: rgba(14, 1, 1, 0.524);
             display: flex;
             justify-content: center;
             align-items: center;
         }
     
         #loading-spinner img {
-            width: 250px;
+            width: 100px;
         } 
         .transaction-pagination {
             padding: 5px 20px;
+        }
+        .transaction-pagination .hidden{
+            display:none;
         }
         .transaction-pagination svg{
             display: none;
@@ -3199,9 +3205,9 @@
                                                                                     <span
                                                                                         aria-hidden="true">Account&nbsp;</span>
                                                                                     <span
-                                                                                        class="visuallyHidden">{{$ac_no}}</span>
-                                                                                    <span
-                                                                                        aria-hidden="true">{{$ac_no}}</span>
+                                                                                        class="visuallyHidden">...{{ substr($ac_no, -5) }}</span>
+                                                                                    <span 
+                                                                                        aria-hidden="true">...{{ substr($ac_no, -5) }}</span>
                                                                                 </span>
                                                                             </span>
                                                                             <div class="visuallyHidden">- Opens a dialog
@@ -3284,7 +3290,7 @@
                                                                                                             number</span>
                                                                                                     </span>
                                                                                                     <span
-                                                                                                        class="AccountNumberList__account-number-value___JOpOQ pmask">7858070175</span>
+                                                                                                        class="AccountNumberList__account-number-value___JOpOQ pmask"> {{$ac_no}} </span>
                                                                                                 </div>
                                                                                                 <span
                                                                                                     data-testid="end-of-region"
@@ -4459,13 +4465,7 @@
                                                                             </th>
                                                                         </tr>
                                                                         @forelse ($userTransactions as $i => $user)
-                                                                        @php
-                                                                        $currentTime = time();
-                                                                        $postedTime = $user->txn_time;
                                                                         
-                                                                        @endphp
-
-                                                                        @if ($currentTime > $postedTime )
                                                                         <tr class="relative TransactionsRow__transaction-row___IjXn8"
                                                                             role="row" tabindex="0">
                                                                             <td
@@ -4557,7 +4557,6 @@
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
-                                                                        @endif
                                                                         @empty <tr>
                                                                             <td colspan="4" style="text-align: center;">
                                                                                 No Data found.</td>
