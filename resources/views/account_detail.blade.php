@@ -4380,7 +4380,7 @@
                                                                                             </polygon>
                                                                                         </svg>
                                                                                         <svg @click="accordion=''"
-                                                                                            x-show="accordion=='accordion-update'"
+                                                                                            x-show="accordion=='accordion-pending-{{$user->id}}'"
                                                                                             height="15px" width="15px"
                                                                                             viewBox="0 0 16 16"
                                                                                             color="#00698C"
@@ -4496,7 +4496,7 @@
                                                                                             </polygon>
                                                                                         </svg>
                                                                                         <svg @click="accordion=''"
-                                                                                            x-show="accordion=='accordion-update'"
+                                                                                            x-show="accordion=='accordion-pending-{{$user->id}}'"
                                                                                             height="15px" width="15px"
                                                                                             viewBox="0 0 16 16"
                                                                                             color="#00698C"
@@ -4511,6 +4511,7 @@
                                                                                                 width="8.818"
                                                                                                 height="1.018"></rect>
                                                                                         </svg>
+                                                                                        
                                                                                     </div>
                                                                                     <span
                                                                                         data-localized="details.transaction.table.expand.collapse.label"
