@@ -34,14 +34,14 @@
             top: 0;
             left: 0;
             z-index: 99999;
-            background-color: white;
+            background-color: rgba(14, 1, 1, 0.524);
             display: flex;
             justify-content: center;
             align-items: center;
         }
     
         #loading-spinner img {
-            width: 250px;
+            width: 100px;
         }        
     </style>
 

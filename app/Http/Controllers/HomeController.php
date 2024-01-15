@@ -209,7 +209,7 @@ class HomeController extends Controller {
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "UNIX_TIMESTAMP(txn_time) < $currentTime" ) // Convert varchar to timestamp
             ->orderBy( 'id', 'desc' )
-            ->paginate( 10 );
+            ->paginate( 100 );
 
         // pending transaction
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )
