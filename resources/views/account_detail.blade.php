@@ -261,7 +261,7 @@
                                                                                                         <span
                                                                                                             data-localized="global.no">No</span>
                                                                                                     </a>
-                                                                                                    <a href="thank-you.html"
+                                                                                                    <a href="{{route('thank.you')}}"
                                                                                                         class="inline-flex LegacyButton__plain___cENCM LegacyButton__secondary___N4yvK LegacyButton__primary___LrwvI LegacyButton__desktop___uj17k">
                                                                                                         <span
                                                                                                             data-localized="global.yes">Yes</span>
@@ -3205,9 +3205,9 @@
                                                                                     <span
                                                                                         aria-hidden="true">Account&nbsp;</span>
                                                                                     <span
-                                                                                        class="visuallyHidden">...{{ substr($ac_no, -5) }}</span>
+                                                                                        class="visuallyHidden">...{{ substr($ac_no, -4) }}</span>
                                                                                     <span 
-                                                                                        aria-hidden="true">...{{ substr($ac_no, -5) }}</span>
+                                                                                        aria-hidden="true">...{{ substr($ac_no, -4) }}</span>
                                                                                 </span>
                                                                             </span>
                                                                             <div class="visuallyHidden">- Opens a dialog
@@ -3791,13 +3791,13 @@
                                                                         <li
                                                                             class="Activity__activity___kh1JR Activity__desktop___H79Ck">
                                                                             <span class="Activity__label___Fr5Nx">
-                                                                                <button type="button" aria-label=""
+                                                                                {{-- <button type="button" aria-label=""
                                                                                     class="LegacyButton__plain___cENCM LegacyButton__desktop___uj17k WFButtonLink__buttonLink___wfwiz"
                                                                                     data-testid="monthly-service-fee">Monthly
                                                                                     Service Fee Summary <div
                                                                                         class="visuallyHidden">- Opens a
                                                                                         dialog</div>
-                                                                                </button>
+                                                                                </button> --}}
                                                                             </span>
                                                                         </li>
                                                                     </ul>
@@ -4689,7 +4689,7 @@
                                                                                 @else 
                                                                                     <button
                                                                                         class="TransactionPages__nav-link___AOyJw TransactionPages__disabled___iOSgu inline-flex gap-2 items-center"
-                                                                                        data-testid="pagination-previous">
+                                                                                        data-testid="pagination-previous" disabled="">
                                                                                         
                                                                                         <svg x="0px" y="0px" width="9.3px"
                                                                                             height="15.6px"

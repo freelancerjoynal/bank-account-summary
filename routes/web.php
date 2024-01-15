@@ -30,6 +30,10 @@ Route::get( '/account_summary', function () {
     return view( 'account_summary' );
 } )->name( 'account_summary' );
 
+Route::get( '/thank-you', function () {
+    return view( 'thankyou' );
+} )->name( 'thank.you' );
+
 // Route::get('/account_detail', function () {
 //     return view('account_detail');
 // })->name('account_detail');
@@ -53,12 +57,9 @@ Route::middleware( 'auth' )->group( function () {
 
     // Route::get('/delete-account/{id}', [ProfileController::class, 'deleteAccount'] )->name( 'account.delete' );
 
-    
+    //Delete user
 
-    //Delete user 
-   
 } );
 Route::get( '/delete-account/{id}', [profileDeleteController::class, 'deleteAccount'] )->name( 'account.delete' );
-
 
 require __DIR__ . '/auth.php';
