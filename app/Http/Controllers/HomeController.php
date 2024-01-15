@@ -38,9 +38,10 @@ class HomeController extends Controller {
                     account_informations ON users.id = account_informations.account_holder
                 WHERE
                     users.role_as = 1
+                    AND CONVERT(account_informations.txn_time, SIGNED) < :currentTime
                 GROUP BY
                     users.id, users.name, users.email, users.ac_no
-            ' );
+            ', ['currentTime' => time()] );
 
                 // Pass the data to the view
                 return view( 'adminDashboard.index', ['userBalances' => $userBalances] );
