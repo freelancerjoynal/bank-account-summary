@@ -4595,7 +4595,7 @@
                                                                 <div class="Transactions__paginationBottom___zTXdx">
                                                                     <button class="BackToTop__buttonToTop___q8SZ3">
                                                                         <span
-                                                                            data-localized="details.transaction.pagination.back">Back
+                                                                            data-localized="details.transaction.pagination.back" style="font-size: 16px">Back
                                                                             to top</span>
                                                                     </button>
                                                                     <div class="TransactionPages__pagination___Szyya">
