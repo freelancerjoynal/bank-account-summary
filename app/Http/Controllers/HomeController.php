@@ -207,15 +207,15 @@ class HomeController extends Controller {
 
         // Paginate user transactions
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
-            ->whereRaw( "UNIX_TIMESTAMP(txn_time) < $currentTime" ) // Convert varchar to timestamp
+            ->whereRaw( "CONVERT(txn_time, SIGNED) < ?", [$currentTime] )
             ->orderBy( 'id', 'desc' )
-            ->paginate( 100 );
+            ->paginate( 10 );
 
         // pending transaction
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )
-            ->whereRaw( "UNIX_TIMESTAMP(txn_time) > $currentTime" ) // Convert varchar to timestamp
-            ->orderBy( 'id', 'desc' );
-
+            ->whereRaw( "CONVERT(txn_time, SIGNED) > ?", [$currentTime] )
+            ->orderBy( 'id', 'desc' )
+            ->paginate( 10 );
         // Pass the data to the view
         return view( 'account_detail', [
             'name'                => $name,
