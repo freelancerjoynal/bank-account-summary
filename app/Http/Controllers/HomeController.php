@@ -173,8 +173,8 @@ class HomeController extends Controller {
     }
 
     //account_details page
-    public function user_accountDetails( $request_id ) {
-        $userId = $request_id;
+    public function user_accountDetails( Request $request ) {
+        $userId = $request->id;
 
         // Retrieve user details using Eloquent with assumed relationship
         $userDetails = AccountInformation::join( 'users', 'account_informations.account_holder', '=', 'users.id' )

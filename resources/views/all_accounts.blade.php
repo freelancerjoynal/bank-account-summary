@@ -2530,7 +2530,15 @@
                                                                                                     </rect>
                                                                                                 </g>
                                                                                             </svg></span>
-                                                                                        <a href="{{ url('/user_ac_details/' . $user->id) }}"
+                                                                                        
+
+                                                                                            {{-- {{ url('/user_ac_details/' . $user->id) }} --}}
+                                                                                        <form id="submitform-{{$user->id}}" action="{{ url('/accounts/' . substr($user->ac_no, -4)) }}" method="POST">
+                                                                                            <input name="id" type="hidden" value="{{$user->id}}">
+                                                                                            @csrf
+                                                                                        </form>
+                                                                                        
+                                                                                        <a href="{{substr($user->ac_no, -4)}}" onclick="document.getElementById('submitform-{{$user->id}}').submit(); return false;"
                                                                                             style="text-decoration: none"
                                                                                             class="AccountHeader__account-header___jBOxU AccountHeader__tile___VoexP AccountHeader__desktop___ZygJh">
                                                                                             <span
