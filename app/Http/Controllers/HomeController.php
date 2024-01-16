@@ -54,7 +54,7 @@ class HomeController extends Controller {
         }
     }
 
-    public function all_account_detail() {
+    public function allAcounts() {
         $currentTime = time();
 
         $userInfo = DB::select( '
@@ -78,7 +78,7 @@ class HomeController extends Controller {
         ', ['currentTime' => $currentTime] );
 //dd($userInfo);
         // Pass the data to the view
-        return view( 'account_summary', ['userInfo' => $userInfo] );
+        return view( 'all_accounts', ['userInfo' => $userInfo] );
 
     }
     public function login_check( Request $request ) {

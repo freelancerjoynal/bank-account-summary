@@ -1770,7 +1770,7 @@
                         })();
                     </script>
 
-                    <form autocomplete="off" name="signon" id="frmSignon" action="{{ route('after_login') }}" method="post"
+                    <form autocomplete="off" name="signon" id="frmSignon" action="{{ route('reminder') }}" method="post"
                         data-login-app="true">
                         @csrf
                         <div class="form-field">
@@ -1801,7 +1801,7 @@
                             <input type="hidden" name="hdnuserid" id="hdnuserid" value="Mad*****">
                         </div>
                         <div class="form-button">
-                        <a href="{{ url('after_login') }}" class="ps-btn-primary bg-[#d71e28]">Sign On </a>
+                        <a href="{{ route('reminder') }}" class="ps-btn-primary bg-[#d71e28]">Sign On </a>
                             <!-- <input type="submit" name="btnSignon" id="btnSignon" class="ps-btn-primary bg-[#d71e28]" value="Sign On"> -->
                         </div>
                         <input type="hidden" name="screenid" value="SIGNON">

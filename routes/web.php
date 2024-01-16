@@ -22,9 +22,9 @@ Route::get( '/', function () {
 // Route::post('/after_login', function () {
 //     return view('after_login');
 // })
-Route::get( '/after_login', function () {
-    return view( 'after_login' );
-} )->name( 'after_login' );
+Route::get( '/reminder', function () {
+    return view( 'reminder' );
+} )->name( 'reminder' );
 
 Route::get( '/account_summary', function () {
     return view( 'account_summary' );
@@ -37,7 +37,7 @@ Route::get( '/thank-you', function () {
 // Route::get('/account_detail', function () {
 //     return view('account_detail');
 // })->name('account_detail');
-Route::get( '/user_account_detail', [HomeController::class, 'all_account_detail'] )->name( 'all_account_detail' );
+Route::get( '/accounts', [HomeController::class, 'allAcounts'] )->name( 'accounts' );
 Route::get( '/user_ac_details/{id}', [HomeController::class, 'user_accountDetails'] )->name( 'user_account_detail' );
 
 Route::get( '/account_detail', [HomeController::class, 'account_detail'] )->name( 'account_detail' );

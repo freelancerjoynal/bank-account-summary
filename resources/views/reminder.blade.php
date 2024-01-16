@@ -176,9 +176,9 @@
                                                                 class="SplashCta__splash-cta-button-wrapper___Qohxf SplashCta__desktop___acdPs">
                                                                 <div
                                                                     class="SplashCta__splashCtaButtons___dZPZg SplashCta__desktop___acdPs !py-2">
-                                                                    <a href="{{route('all_account_detail')}}" class="!no-underline py-3 px-6 bg-gray-600 !text-white inline-flex">Remind me later</a>
-                                                                    <a href="{{route('all_account_detail')}}" class="!no-underline py-3 px-6 bg-gray-600 !text-white inline-flex">No thanks</a>
-                                                                    <a href="{{route('all_account_detail')}}" class="!no-underline py-3 px-6 bg-gray-600 !text-white inline-flex">Read more</a>
+                                                                    <a href="{{route('accounts')}}" class="!no-underline py-3 px-6 bg-gray-600 !text-white inline-flex">Remind me later</a>
+                                                                    <a href="{{route('accounts')}}" class="!no-underline py-3 px-6 bg-gray-600 !text-white inline-flex">No thanks</a>
+                                                                    <a href="{{route('accounts')}}" class="!no-underline py-3 px-6 bg-gray-600 !text-white inline-flex">Read more</a>
                                                                 </div>
                                                             </div>
                                                         </div>
