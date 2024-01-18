@@ -53,9 +53,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="/dashboard">
+                <a class="nav-link" href="{{route('dashboard')}}">
                 <i class='fas fa-home'></i>
                     <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.statements')}}">
+                <i class='fas fa-home'></i>
+                    <span>Statements</span></a>
             </li>
              <!-- Divider -->
              <hr class="sidebar-divider my-0">

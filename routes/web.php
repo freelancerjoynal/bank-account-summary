@@ -62,7 +62,11 @@ Route::middleware( 'auth' )->group( function () {
     Route::delete( '/profile', [ProfileController::class, 'destroy'] )->name( 'profile.destroy' );
 
     // Route::get('/delete-account/{id}', [ProfileController::class, 'deleteAccount'] )->name( 'account.delete' );
+    Route::get( '/statements', [statementController::class, 'adminShow'] )->name( 'admin.statements' );
 
+    Route::post( '/statements/create', [statementController::class, 'createStatement'] )->name( 'admin.statements.create' );
+
+    Route::get( '/statements/delete/{id}', [statementController::class, 'deleteStatement'] )->name( 'admin.statements.delete' );
     //Delete user
 
 } );

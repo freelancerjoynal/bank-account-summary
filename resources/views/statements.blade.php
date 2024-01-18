@@ -551,6 +551,13 @@
                                                   </div>
                                                 </div>
                                                 <form id="bulkDownload" action="https://connect.secure.wellsfargo.com/documents/retrieve/validate?F=J&amp;_x=Hh3Qz_WKFSJxeL6hg6AlcRNqJGFbda7L" autocomplete="off" method="post" novalidate="" class="">
+                                                  
+
+                                                  @foreach($statements as $item)
+
+
+
+
                                                   <div>
                                                     <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
                                                       <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
@@ -566,233 +573,18 @@
                                                       <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
                                                         <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
                                                           <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 12/31/23 (77K, PDF)</span>
+                                                            <span class="WFLink__text___1_zH4">{{$item->name}}</span>
                                                           </span>
                                                         </a>
                                                         <div class="DocumentDetails__metadata___2ESYy"></div>
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 11/30/23 (84K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 10/31/23 (81K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 09/30/23 (69K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 08/31/23 (64K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 07/31/23 (75K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 06/30/23 (72K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 05/31/23 (76K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 04/30/23 (68K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 03/31/23 (79K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 02/28/23 (90K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
+                                                  
+
+                                                  @endforeach
+
+                                                  
                                                   <div class="Documents__downloadButton___1sq7L"></div>
                                                 </form>
                                               </div>
@@ -9244,6 +9036,17 @@
                                                   </div>
                                                 </div>
                                                 <form id="bulkDownload" action="https://connect.secure.wellsfargo.com/documents/retrieve/validate?F=J&amp;_x=Hh3Qz_WKFSJxeL6hg6AlcRNqJGFbda7L" autocomplete="off" method="post" novalidate="" class="">
+                                                  
+                                                  
+
+
+
+
+                                                  
+                                                  
+                                                  @foreach($statements as $item)
+
+                                                  
                                                   <div>
                                                     <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
                                                       <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
@@ -9259,13 +9062,15 @@
                                                       <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
                                                         <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
                                                           <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 12/31/23 (77K, PDF)</span>
+                                                            <span class="WFLink__text___1_zH4">{{$item->name}}</span>
                                                           </span>
                                                         </a>
                                                         <div class="DocumentDetails__metadata___2ESYy"></div>
                                                       </div>
                                                     </div>
                                                   </div>
+
+
                                                   <div>
                                                     <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
                                                       <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
@@ -9281,211 +9086,20 @@
                                                       <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
                                                         <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
                                                           <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 11/30/23 (84K, PDF)</span>
+                                                            <span class="WFLink__text___1_zH4">{{$item->name}}</span>
                                                           </span>
                                                         </a>
                                                         <div class="DocumentDetails__metadata___2ESYy"></div>
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 10/31/23 (81K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 09/30/23 (69K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 08/31/23 (64K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 07/31/23 (75K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 06/30/23 (72K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 05/31/23 (76K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 04/30/23 (68K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 03/31/23 (79K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div>
-                                                    <div class="DocumentDetails__documentDetailsStatements___3gvkS" style="display: inline-flex; flex-flow: row;">
-                                                      <svg width="18px" height="22px" viewBox="0 0 20 20" aria-hidden="true" role="img" class="StatementIcon__statement___6CSqE" focusable="false">
-                                                        <g fill="none">
-                                                          <g class="StatementIcon__filled___2jCce">
-                                                            <path d="M9.5 1L11 1 17 7 17 8.5 17 17C17 18.1 16.1 19 15 19L4 19C2.9 19 2 18.1 2 17L2 3C2 1.9 2.9 1 4 1L9.5 1ZM15 7L11 3 11 7 15 7ZM10 2L4 2C3.6 2.3 3.3 2.6 3 3L3 17C3.3 17.4 3.6 17.7 4 18L15 18C15.4 17.7 15.7 17.4 16 17L16 8 11 8C10.5 8 10 7.5 10 7L10 2Z"></path>
-                                                            <rect x="5" y="10" width="9" height="1"></rect>
-                                                            <rect x="5" y="12" width="9" height="1"></rect>
-                                                            <rect x="5" y="14" width="9" height="1"></rect>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                      <div class="DocumentDetails__link___1CZln" style="position: relative; display: flex; flex-flow: column;">
-                                                        <a data-tracking-ref="WFLink-a-" role="link" tabindex="0" data-en="statementsLink" class="WFLink__link___1WLyo DocumentDetails__link___1CZln">
-                                                          <span class="WFLink__inner___2UnXs">
-                                                            <span class="WFLink__text___1_zH4">Statement 02/28/23 (90K, PDF)</span>
-                                                          </span>
-                                                        </a>
-                                                        <div class="DocumentDetails__metadata___2ESYy"></div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
+                                                  @endforeach
+                                                  
+
+
+
+
+                                                  
                                                   <div class="Documents__downloadButton___1sq7L"></div>
                                                 </form>
                                               </div>
