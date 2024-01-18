@@ -6,13 +6,13 @@
     <script
       type="text/javascript"
       async=""
-      src="./Update contact information PHONE - Wells Fargo_files/ga.js"
+      src="{{asset('assets/account-update')}}/ga.js"
       nonce=""
     ></script>
     <script
       type="text/javascript"
       async=""
-      src="./Update contact information PHONE - Wells Fargo_files/gtag.js"
+      src="{{asset('assets/account-update')}}/gtag.js"
       nonce=""
     ></script>
     <script
@@ -20,14 +20,14 @@
       async=""
       charset="utf-8"
       id="utag_44"
-      src="./Update contact information PHONE - Wells Fargo_files/medallia-digital-embed.js"
+      src="{{asset('assets/account-update')}}/medallia-digital-embed.js"
     ></script>
     <script
       type="text/javascript"
       async=""
       charset="utf-8"
       id="utag_38"
-      src="./Update contact information PHONE - Wells Fargo_files/gtag(1).js"
+      src="{{asset('assets/account-update')}}/gtag(1).js"
     ></script>
     <script
       type="text/javascript"
@@ -35,12 +35,12 @@
       charset="utf-8"
       id="_cls_detector"
       data-clsconfig="reportURI=https://rubicon.wellsfargo.com/glassbox/reporting/0C458F45-AC71-02CE-34D8-401C8A313B38/cls_report;clientAttributesEnabled=true;clientAttributesMaxLength=150;forceRenderingFixForUA=CPU iPhone;recordConsoleErrors=true;recordScrolls=true;recordMouseMoves=true;recordErrors=true;recordHovers=true;idleEventTimeInterval=-1;reportInterval=60000;interceptAjax=true;ajaxRecordMetadata=never;valueMaskingMode=blacklist;maskBlacklistValueByClass=pmask;domMaskingMode=blacklist;domBlacklistMaskContentByClass=pmask;domOmitByClass=check-img-content;domKeepScriptMatching=utag_data;captureGlobalObjects=utag_data;domTamperingDetectionEnabled=true;captureGlobalObjectsOnSegmentChange=true;devToolsDebuggerBasedDetection=false;ajaxRecordRequestHeaders=hostMatches(wellsfargo);ajaxRecordResponseHeaders=hostMatches(wellsfargo);ajaxRecordStats=hostMatches(wellsfargo);maskTitle=false;domOmitById=droparea;"
-      src="./Update contact information PHONE - Wells Fargo_files/detector-dom.min.js"
+      src="{{asset('assets/account-update')}}/detector-dom.min.js"
     ></script>
     <script
       type="text/javascript"
       async=""
-      src="./Update contact information PHONE - Wells Fargo_files/adrum-ext.59191791453ae6311081a09b4cf33c2d.js"
+      src="{{asset('assets/account-update')}}/adrum-ext.59191791453ae6311081a09b4cf33c2d.js"
     ></script>
     <script nonce="">
       (function () {
@@ -106,7 +106,7 @@
       })();
     </script>
     <script
-      src="./Update contact information PHONE - Wells Fargo_files/adrum-ext.js"
+      src="{{asset('assets/account-update')}}/adrum-ext.js"
       nonce=""
     ></script>
 
@@ -1487,7 +1487,7 @@
       };
     </script>
     <script
-      src="./Update contact information PHONE - Wells Fargo_files/utag.sync.js"
+      src="{{asset('assets/account-update')}}/utag.sync.js"
       nonce=""
     ></script>
     <link
@@ -1547,14 +1547,14 @@
       async=""
       charset="utf-8"
       id="utag_wfc.m2_44"
-      src="./Update contact information PHONE - Wells Fargo_files/utag.44.js"
+      src="{{asset('assets/account-update')}}/utag.44.js"
     ></script>
     <script
       type="text/javascript"
       async=""
       charset="utf-8"
       id="utag_wfc.m2_21"
-      src="./Update contact information PHONE - Wells Fargo_files/utag.21.js"
+      src="{{asset('assets/account-update')}}/utag.21.js"
     ></script>
     <style type="text/css" id="kampyleStyle">
       .noOutline {
@@ -4164,29 +4164,29 @@
       </div>
     </div>
 
-    <!-- <script nonce="">
+    <script nonce="">
       window.mwfGlobals = window.mwfGlobals || {};
       window.mwfGlobals.reusableMenuSwitch = true;
       window._wfPayload.stringsPath =
         "/appassets/json/strings/97ddec601e84dd6d2fb3b6505a36c4c1/7M/contactinformation";
       window._wfPayload.fragmentsPath =
         "/appassets/json/fragments/1a22360a8c3ffdabe870832261803ea8/7M/contactinformation";
-    </script> -->
+    </script>
 
     <script
       type="text/javascript"
-      src="./Update contact information PHONE - Wells Fargo_files/runtime.f1aa23ab874cc63e6526.js"
+      src="{{asset('assets/account-update')}}/runtime.f1aa23ab874cc63e6526.js"
       nonce=""
     ></script>
 
     <script
       type="text/javascript"
-      src="./Update contact information PHONE - Wells Fargo_files/main.9644c159cf23fa09045f.chunk.js"
+      src="{{asset('assets/account-update')}}/main.9644c159cf23fa09045f.chunk.js"
       nonce=""
     ></script>
     <script
       type="text/javascript"
-      src="./Update contact information PHONE - Wells Fargo_files/wfui.2ca99bb93cffd2cf4348.chunk.js"
+      src="{{asset('assets/account-update')}}/wfui.2ca99bb93cffd2cf4348.chunk.js"
       nonce=""
     ></script>
     <div id="app-modal-root">
@@ -4252,7 +4252,7 @@
     </div>
     <script
       type="text/javascript"
-      src="./Update contact information PHONE - Wells Fargo_files/1JIJQUB"
+      src="{{asset('assets/account-update')}}/1JIJQUB"
     ></script>
     <div>
       <div
@@ -10267,18 +10267,18 @@
       </section>
     </div>
     <script
-      src="./Update contact information PHONE - Wells Fargo_files/utag.js"
+      src="{{asset('assets/account-update')}}/utag.js"
       async=""
     ></script>
     <script
       type="text/javascript"
       async=""
-      src="./Update contact information PHONE - Wells Fargo_files/generic1697649041190.js"
+      src="{{asset('assets/account-update')}}/generic1697649041190.js"
       charset="UTF-8"
     ></script>
     <style title="MDigital_animationStyle"></style>
     <script
-      src="./Update contact information PHONE - Wells Fargo_files/nuance-websdk-loader.js"
+      src="{{asset('assets/account-update')}}/nuance-websdk-loader.js"
       async=""
     ></script>
     <link
@@ -10326,12 +10326,12 @@
       "
     ></div>
     <script
-      src="./Update contact information PHONE - Wells Fargo_files/nuan-c2c.js"
+      src="{{asset('assets/account-update')}}/nuan-c2c.js"
       type="text/javascript"
       id="nuanC2C"
     ></script>
     <script
-      src="./Update contact information PHONE - Wells Fargo_files/wfui-bridge.js"
+      src="{{asset('assets/account-update')}}/wfui-bridge.js"
       type="text/javascript"
       id="wfuibridge"
     ></script>
