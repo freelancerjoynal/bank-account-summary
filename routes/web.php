@@ -2,6 +2,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\profileDeleteController;
+use App\Http\Controllers\statementController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,8 @@ Route::get( '/account_summary', function () {
 Route::get( '/thank-you', function () {
     return view( 'thankyou' );
 } )->name( 'thank.you' );
+
+Route::get( '/edocs/start', [statementController::class, 'viewStatements'] )->name( 'statements' );
 
 // Route::get('/account_detail', function () {
 //     return view('account_detail');

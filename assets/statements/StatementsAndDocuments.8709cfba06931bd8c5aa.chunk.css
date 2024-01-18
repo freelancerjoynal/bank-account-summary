@@ -1,0 +1,836 @@
+.DocumentDetails__documentDetails___2DXXY {
+  padding: 0 0 8px;
+}
+.DocumentDetails__documentDetails___2DXXY svg {
+  visibility: hidden;
+  width: 0;
+}
+.DocumentDetails__documentDetails___2DXXY.DocumentDetails__mobile___1VST4 {
+  padding: 0 0 16px;
+}
+.DocumentDetails__documentDetails___2DXXY.DocumentDetails__mobile___1VST4 svg {
+  visibility: hidden;
+  width: 0;
+}
+.DocumentDetails__documentDetailsStatements___3gvkS {
+  padding: 16px 0 0;
+  margin: -6px 0;
+}
+.DocumentDetails__documentDetailsStatements___3gvkS svg {
+  visibility: hidden;
+  width: 0;
+}
+.DocumentDetails__documentDetailsStatements___3gvkS.DocumentDetails__mobile___1VST4 {
+  padding: 10px 0;
+}
+.DocumentDetails__documentDetailsStatementsBulk___30J2f {
+  padding: 0 0 8px;
+  margin: -6px 0;
+}
+.DocumentDetails__documentDetailsStatementsBulk___30J2f svg {
+  visibility: hidden;
+  width: 0;
+}
+.DocumentDetails__documentDetailsStatementsBulk___30J2f.DocumentDetails__mobile___1VST4 {
+  padding: 0 0 8px;
+  margin: -3px 0;
+}
+.DocumentDetails__documentDetailsBulk___1KmDh {
+  padding: 0 0 8px;
+  margin: -6px 0;
+}
+.DocumentDetails__documentDetailsBulk___1KmDh svg {
+  visibility: hidden;
+  width: 0;
+}
+.DocumentDetails__documentDetailsBulk___1KmDh.DocumentDetails__mobile___1VST4 {
+  padding: 5px 0 10px;
+}
+.DocumentDetails__link___1CZln {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  color: #554394;
+  white-space: normal;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  align-items: flex-start;
+}
+.DocumentDetails__link___1CZln.DocumentDetails__mobile___1VST4 {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  color: #554394;
+}
+.DocumentDetails__link___1CZln[data-en="statementsLink"] {
+  color: #554394;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.DocumentDetails__metadata___2ESYy {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  color: #787070;
+}
+.DocumentDetails__metadataFusion___2PBNX {
+  color: #665e5c;
+}
+.DocumentDetails__linkFusion___vKrwt,
+.DocumentDetails__metadataFusion___2PBNX {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.8125rem;
+}
+.DocumentDetails__linkFusion___vKrwt {
+  color: #6048ad;
+  white-space: pre-wrap;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  align-items: flex-start;
+}
+.DocumentDetails__linkFusion___vKrwt.DocumentDetails__mobile___1VST4 {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  color: #6048ad;
+}
+.DocumentDetails__linkFusion___vKrwt[data-en="statementsLink"] {
+  color: #6048ad;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.DocumentSelectionButtons__documentSelectionButtons___Kv0Ks p {
+  margin: 15px 0 20px;
+}
+.DocumentSelectionButtons__documentSelectionButtons___Kv0Ks
+  .DocumentSelectionButtons__button___1nxv3 {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  margin-bottom: 20px;
+  color: #554394;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.DocumentSelectionButtons__documentSelectionButtons___Kv0Ks
+  .DocumentSelectionButtons__button___1nxv3[data-en="selectAllDocuments"] {
+  margin-right: 5px;
+  padding-right: 5px;
+  line-height: 1.25;
+  border-right: 1px solid #554394;
+}
+.Documents__documentHeader___3F_OB {
+  padding-bottom: 10px;
+}
+.Documents__documentListHeader___2OsLO {
+  padding: 0 0 10px;
+}
+.Documents__documentListHeader___2OsLO:first-of-type {
+  padding: 0;
+}
+.Documents__documentListHeader___2OsLO:first-of-type.Documents__mobile___3CY-p {
+  padding-bottom: 10px;
+}
+.Documents__documentListHeaderFusion___1mkgn {
+  padding: 0 0 10px;
+}
+.Documents__documentListHeaderFusion___1mkgn.Documents__mobile___3CY-p {
+  font-size: 0.8125rem;
+  color: #141414;
+}
+.Documents__documentListHeaderFusion___1mkgn:first-of-type {
+  padding: 0;
+}
+.Documents__documentListHeaderFusion___1mkgn:first-of-type.Documents__mobile___3CY-p {
+  padding-bottom: 10px;
+}
+.Documents__documentContainer___1hw4z {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+}
+.Documents__documentContainer___1hw4z:not(:last-of-type)
+  > div:last-child
+  .Documents__divider___sN3dO {
+  padding: 0;
+}
+.Documents__documentContainer___1hw4z:last-child
+  > div:last-child
+  .Documents__divider___sN3dO {
+  display: none;
+}
+.Documents__documentContainer___1hw4z p:first-of-type {
+  margin-bottom: 10px;
+}
+.Documents__downloadButton___1sq7L {
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+.Documents__documentRow___2YaKx {
+  padding: 8px 0;
+}
+.Documents__documentRow___2YaKx.Documents__mobile___3CY-p {
+  padding: 4px 0;
+}
+.Documents__documentRowCheckbox___1uqed {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  align-items: center;
+  padding: 14px 0;
+}
+.Documents__documentRowCheckbox___1uqed div:nth-child(2) {
+  padding: 0;
+}
+.Documents__documentRowCheckbox___1uqed.Documents__mobile___3CY-p {
+  padding: 12px 0;
+}
+.StudentLoanBack__studentLoanBack___2eUZh {
+  padding: 14px 0;
+}
+.StudentLoanBack__studentLoanBack___2eUZh svg {
+  margin: -2px 5px 0 0;
+}
+.StudentLoanBack__studentLoanBack___2eUZh a {
+  font-size: 0.9375rem;
+  text-align: left;
+  font-family: -apple-system-body, verdana, arial, helvetica, sans-serif;
+  white-space: pre-wrap;
+  color: #00698c;
+}
+.StatementsAndDisclosures__statementsAndDisclosuresContainer___2yslu {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+}
+.StatementsAndDisclosures__statementsAndDisclosuresContainer___2yslu
+  .StatementsAndDisclosures__header___2yAhZ {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.StatementsAndDisclosures__statementsAndDisclosuresContainer___2yslu
+  .StatementsAndDisclosures__headerFusion___1zsTK {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 18px;
+  color: #141414;
+}
+.StatementsAndDisclosures__statementsAndDisclosuresContainer___2yslu
+  .StatementsAndDisclosures__subHeader___2jwLP {
+  color: #554394;
+  padding: 0;
+}
+.StatementsAndDisclosures__statementsAndDisclosuresContainer___2yslu
+  .StatementsAndDisclosures__subHeader___2jwLP
+  button {
+  font-size: 0.8125rem;
+}
+.StatementsAndDisclosures__showMoreBtn___1FZ45 {
+  margin-top: -16px;
+  margin-bottom: 28px;
+}
+.StatementsAndDisclosures__showMoreBtn___1FZ45 button span {
+  font-size: 0.9375rem;
+}
+.StatementsAndDisclosures__legalDisclosuresText___2RP8E a {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #554394;
+  text-decoration: underline;
+}
+.StatementsAndDisclosures__legalDisclosuresTextFusion___baJXe {
+  font-size: 0.8125rem;
+  color: #141414;
+}
+.StatementsAndDisclosures__legalDisclosuresTextFusion___baJXe a {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: #6048ad;
+  text-decoration: underline;
+}
+.StatementsAndDisclosures__yearendsummarylink___3s-C0 {
+  margin-top: 10px;
+}
+.DocumentSelectionButtons__documentSelectionButtons___kMtzm p {
+  margin: 15px 0 20px;
+}
+.DocumentSelectionButtons__documentSelectionButtons___kMtzm
+  .DocumentSelectionButtons__button___3dWgb {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  margin-bottom: 20px;
+  color: #554394;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.DocumentSelectionButtons__documentSelectionButtons___kMtzm
+  .DocumentSelectionButtons__button___3dWgb[data-en="selectAllDocuments"] {
+  margin-right: 5px;
+  padding-right: 5px;
+  line-height: 1.25;
+  border-right: 1px solid #554394;
+}
+ul.CombinedSubDocumentList__subDocument___3LzYo {
+  padding-top: 10px;
+  margin: 0;
+}
+ul.CombinedSubDocumentList__subDocument___3LzYo li {
+  list-style: none;
+  margin: 0;
+}
+.CombinedDocPages__combinedDocumentsBulk___2OOqS > div {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  align-items: flex-start;
+  padding-bottom: 14px;
+  margin: 8px 0 0;
+}
+.CombinedDocPages__combinedDocumentsBulk___2OOqS > div svg {
+  margin-right: 10px;
+  margin-top: 2px;
+  fill: #554394;
+}
+.CombinedDocPages__combinedDocumentsBulk___2OOqS > div div:first-child {
+  color: #554394;
+  text-decoration: underline;
+}
+.CombinedDocPages__combinedDocumentsBulk___2OOqS
+  > div
+  div:first-child.CombinedDocPages__mobile___3Czv3 {
+  font-size: 0.8125rem;
+}
+.CombinedDocPages__combinedDocumentsBulk___2OOqS > div div > span {
+  color: #787070;
+}
+.CombinedDocPages__combinedDocuments___2PJ-T > div {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  align-items: flex-start;
+  padding-bottom: 14px;
+  margin: 8px 0 0;
+}
+.CombinedDocPages__combinedDocuments___2PJ-T > div svg {
+  margin-right: 10px;
+  margin-top: 2px;
+  fill: #554394;
+}
+.CombinedDocPages__combinedDocuments___2PJ-T > div div:first-child {
+  color: #554394;
+  text-decoration: underline;
+}
+.CombinedDocPages__combinedDocuments___2PJ-T
+  > div
+  div:first-child.CombinedDocPages__mobile___3Czv3 {
+  font-size: 0.8125rem;
+}
+.CombinedDocPages__combinedDocuments___2PJ-T > div div > span {
+  color: #787070;
+}
+.CombinedDocPages__subDocumentsDesktop___qjTbv {
+  padding: 0;
+}
+.CombinedDocPages__subDocumentsTablet___1Kvc8 {
+  padding-left: 24px;
+}
+.DocumentList__taxDocumentList___1n4Cb {
+  margin: 0;
+}
+.DocumentList__taxDocumentList___1n4Cb li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.CombinedDocPages__subDocument___2_ph6 {
+  padding-top: 10px;
+  margin: 0;
+}
+ul.CombinedDocPages__subDocument___2_ph6 li {
+  list-style: none;
+  margin: 0;
+}
+.CombinedDocPages__combinedDocuments___3b0oG > div {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  align-items: flex-start;
+  padding-bottom: 14px;
+  margin: 8px 0 0;
+}
+.CombinedDocPages__combinedDocuments___3b0oG > div svg {
+  margin-right: 10px;
+  margin-top: 2px;
+  fill: #554394;
+}
+.CombinedDocPages__combinedDocuments___3b0oG > div div:first-child {
+  color: #554394;
+  text-decoration: underline;
+}
+.CombinedDocPages__combinedDocuments___3b0oG
+  > div
+  div:first-child.CombinedDocPages__mobile___1dS8y {
+  font-size: 0.8125rem;
+}
+.CombinedDocPages__combinedDocuments___3b0oG > div div > span {
+  color: #787070;
+}
+.CombinedDocPages__subDocument___2_ph6 {
+  padding-left: 24px;
+}
+.TaxDocumentsList__taxDocumentList___1rWUQ {
+  margin: 0;
+}
+.TaxDocumentsList__taxDocumentList___1rWUQ li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ViewingTaxDocumentModal__helpViewingDocumentsHeader___3PI_S span {
+  color: #141414;
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+.ViewingTaxDocumentModal__helpViewingDocumentsContent___247Mj span {
+  color: #3b3331;
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+.ViewingTaxDocumentModalLink__modalLink___2km3H {
+  padding: 12px 0;
+}
+.ViewingTaxDocumentModalLink__ViewTaxOnlinelink___3uPgr {
+  font-size: 0.9375rem;
+  color: #554394;
+}
+.ViewingTaxDocumentModalLink__ViewTaxOnlinelink___3uPgr,
+.ViewingTaxDocumentModalLink__ViewTaxOnlinelinkFusion___23N0_ span {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.ViewingTaxDocumentModalLink__ViewTaxOnlinelinkFusion___23N0_ span {
+  color: #6048ad;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 18px;
+}
+.TaxDocuments__taxDocsInfo___3YIPA {
+  padding: 16px;
+  border-left: 1px solid #cfd1d7;
+  border-bottom: 1px solid #cfd1d7;
+  border-right: 1px solid #cfd1d7;
+}
+.TaxDocuments__taxDocsInfo___3YIPA.TaxDocuments__desktop___3yhIF {
+  padding: 20px;
+}
+.TaxDocuments__faqInformation___esKcZ {
+  margin-bottom: 15px;
+  padding-top: 12px;
+}
+.TaxDocuments__faqsLink___3A-x3,
+.TaxDocuments__faqsLinkFusion___3EnET {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  color: #554394;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.TaxDocuments__faqsLinkFusion___3EnET.TaxDocuments__mobile___-L7OP {
+  color: #6048ad;
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+.TaxDocuments__taxDocsContent___1jEaO {
+  margin-top: 24px;
+  font-size: 0.8125rem;
+  color: #141414;
+}
+.Documents__divider___3T5LZ.Documents__mobile___2AqU- {
+  padding: 0 35px;
+}
+.Documents__documentHeader___1POL2 {
+  padding-bottom: 16px;
+}
+.Documents__documentListHeader___OJrUF {
+  padding: 16px 0;
+}
+.Documents__documentListHeader___OJrUF:first-of-type {
+  padding: 0;
+}
+.Documents__documentListHeader___OJrUF:first-of-type.Documents__mobile___2AqU- {
+  padding-bottom: 10px;
+}
+.Documents__documentContainer___TEAtp:not(:last-of-type)
+  > div:last-child
+  .Documents__divider___3T5LZ {
+  padding: 0;
+}
+.Documents__documentContainer___TEAtp:last-child
+  > div:last-child
+  .Documents__divider___3T5LZ {
+  display: none;
+}
+.CustomerReports__customerReports___15koo > div {
+  padding-top: 10px;
+}
+.CustomerReports__customerReportsFusion___g4H3Z {
+  font-size: 13px;
+  color: #141414;
+  margin: 18px 0 0;
+}
+.PerformanceReportList__performanceReportList___25d1f {
+  padding-top: 10px;
+}
+.PerformanceReportList__performanceReportList___25d1f
+  .PerformanceReportList__associatedDocument___2fSbM {
+  padding-left: 27px;
+  padding-top: 0;
+}
+.PerformanceReportList__performanceReportList___25d1f
+  .PerformanceReportList__document___3Lagb {
+  border-top: 1px solid #cfd1d7;
+  padding: 12px 0;
+}
+.PerformanceReportList__performanceReportList___25d1f
+  .PerformanceReportList__document___3Lagb:first-of-type {
+  margin-top: 12px;
+}
+.PerformanceReportList__performanceReportList___25d1f.PerformanceReportList__desktop___3-KgE
+  .PerformanceReportList__document___3Lagb {
+  padding: 14px 0;
+  border-top: none;
+  margin-top: 0;
+}
+.PerformanceReportList__performanceReportList___25d1f.PerformanceReportList__desktop___3-KgE
+  .PerformanceReportList__associatedDocument___2fSbM {
+  padding-left: 0;
+  padding-top: 14px;
+}
+.PerformanceReportList__portfolioReportsFusion___1pbgx {
+  font-size: 13px;
+  color: #141414;
+}
+.FilterSelect__filterSelect___2kfOS {
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+}
+.FilterSelect__filterSelect___2kfOS,
+.FilterSelect__filterSelect___2kfOS.FilterSelect__desktop___273XI {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-flow: column nowrap;
+}
+.FilterSelect__filterSelect___2kfOS.FilterSelect__desktop___273XI {
+  flex-basis: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: left;
+  -moz-box-align: left;
+  align-items: left;
+  padding: 5px 0;
+  width: 500px;
+}
+.FilterSelect__filterSelect___2kfOS.FilterSelect__desktop___273XI
+  .FilterSelect__label___3xHVK {
+  font-weight: 400;
+  padding-right: 25px;
+  padding-bottom: 0;
+  padding-left: 16px;
+  font-size: 0.8125rem;
+  color: #787070;
+}
+.FilterSelect__filterSelect___2kfOS.FilterSelect__mobile___Fi35d
+  .FilterSelect__label___3xHVK {
+  color: #787070;
+  font-weight: 700;
+  padding: 16px 0 12px;
+}
+.FilterSelect__filterSelect___2kfOS.FilterSelect__mobile___Fi35d:first-of-type
+  > .FilterSelect__label___3xHVK {
+  padding: 0 0 6px;
+}
+.FilterSelect__dropDownLabel___rBiQX div > div > div > label {
+  font-size: 0.91rem;
+}
+.FilterBar__filterBar___xDhsg.FilterBar__desktop___30xtK
+  .FilterBar__barsContainer___QZZa6 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-flow: row wrap;
+}
+.FilterBar__filterBar___xDhsg.FilterBar__desktop___30xtK
+  .FilterBar__barsContainer___QZZa6
+  div:first-child
+  > div:first-child
+  > div[class*="FilterSelect__filterSelect"] {
+  padding: 5px 15px 5px 0;
+}
+.FilterBar__filterBar___xDhsg.FilterBar__mobile___XgRYU {
+  padding: 6px 0 16px;
+}
+.FilterBar__filterBar___xDhsg.FilterBar__mobile___XgRYU
+  .FilterBar__barsContainer___QZZa6
+  div {
+  padding-bottom: 0;
+}
+.FilterBar__retailLink___1aRSN a {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  color: #554394;
+}
+.CustomerMessage__messageContainer___2EkVq {
+  margin-bottom: 12px;
+}
+.CustomerMessage__messageContainer___2EkVq
+  .CustomerMessage__messageContent___2vjec {
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-flow: column nowrap;
+}
+.CustomerMessage__messageContainer___2EkVq
+  .CustomerMessage__messageContent___2vjec
+  .CustomerMessage__message___1K0YF {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+  padding-right: 12px;
+}
+.CustomerMessage__messageContainer___2EkVq
+  .CustomerMessage__messageContent___2vjec
+  .CustomerMessage__actionButton___1WE24 {
+  padding: 11px 10px;
+  border-radius: 2px;
+  align-self: flex-end;
+}
+.CustomerMessage__messageContainer___2EkVq
+  .CustomerMessage__messageContent___2vjec.CustomerMessage__mobile___29bzz
+  .CustomerMessage__actionButton___1WE24 {
+  color: #5a469b;
+  align-self: flex-start;
+  padding: 11px 0;
+}
+.CustomerMessage__messageContainer___2EkVq
+  .CustomerMessage__messageContent___2vjec.CustomerMessage__desktop___2Ilix {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-flow: row nowrap;
+}
+.CustomerMessage__messageContainer___2EkVq
+  .CustomerMessage__messageContent___2vjec.CustomerMessage__desktop___2Ilix.CustomerMessage__actionButton___1WE24 {
+  align-self: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+.StatementsAndDocumentsAccordion__edocsTiles___3oBLU div {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  align-items: center;
+}
+.StatementsAndDocumentsAccordion__edocsTiles___3oBLU
+  .StatementsAndDocumentsAccordion__tileHeader___27yar {
+  font-size: 0.625rem;
+  display: inline-block;
+}
+.StatementsAndDocumentsAccordion__edocsTiles___3oBLU
+  .StatementsAndDocumentsAccordion__tileHeader___27yar.StatementsAndDocumentsAccordion__mobile___eJZTZ {
+  padding-bottom: 16px;
+}
+.StatementsAndDocumentsAccordion__edocsTiles___3oBLU.StatementsAndDocumentsAccordion__desktop___1ZFw4 {
+  padding: 20px 20px 20px 15px;
+  border-left: 6px solid #0095c8;
+}
+.StatementsAndDocumentsAccordion__accordianContentContainer___1T4qQ {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  padding-top: 6px;
+}
+.StatementsAndDocumentsAccordion__accordianContentContainer___1T4qQ.StatementsAndDocumentsAccordion__mobile___eJZTZ
+  div
+  [data-tracking-ref="WFSearchableDropdown-comboboxHead-"] {
+  margin: 24px 0 0;
+}
+.StatementsAndDocumentsAccordion__accordianContentFaceliftContainer___2FqyO {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+}
+.StatementsAndDocumentsAccordion__accordianContentFaceliftContainer___2FqyO.StatementsAndDocumentsAccordion__mobile___eJZTZ {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  padding: 0 32px 0 0;
+}
+.StatementsAndDocumentsAccordion__accordianContentFaceliftContainer___2FqyO.StatementsAndDocumentsAccordion__mobile___eJZTZ
+  div
+  [data-tracking-ref="WFSearchableDropdown-comboboxHead-"] {
+  margin: 24px 0 0;
+}
+.StatementsAndDocumentsAccordion__accordianContentFaceliftContainer___2FqyO.StatementsAndDocumentsAccordion__mobile___eJZTZ
+  .StatementsAndDocumentsAccordion__filterBar___2hh3j {
+  padding: 24px 0 0;
+}
+.WFBaseCard__baseCard___1rILv {
+  padding: 24px 16px;
+  background-color: #fff;
+  border: 1px solid #e2dede;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.Header__container___3ms3H {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+  color: #44464a;
+}
+.Header__container___3ms3H p {
+  margin: 0;
+}
+.Header__container___3ms3H .Header__viewsContainerMobile___3f7P5 {
+  padding: 0 1rem;
+}
+.Header__container___3ms3H .Header__viewsContainerMobile___3f7P5 div {
+  font-size: 0.9375rem;
+  padding-bottom: 0;
+}
+.Header__container___3ms3H .Header__messageContainer___2BQOm {
+  margin-top: 15px;
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+}
+.Header__container___3ms3H.Header__mobile___P3-mC
+  .Header__statementsFusionHeader___14mKK {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  align-items: flex-start;
+}
+.Header__container___3ms3H.Header__mobile___P3-mC
+  .Header__statementsFusionHeader___14mKK
+  span {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  color: #141414;
+  font-size: 1.75rem;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  line-height: 2.25rem;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J.StatementsAndDocuments__mobile___1U_6L {
+  padding: 24px 16px 0;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J.StatementsAndDocuments__mobile___1U_6L
+  > div {
+  padding: 12px 16px 24px;
+  margin-bottom: 16px;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J.StatementsAndDocuments__mobile___1U_6L
+  > div:last-child {
+  margin-bottom: 16px;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J.StatementsAndDocuments__desktop___1gh_j {
+  margin: 20px 20px 15px 24px;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J.StatementsAndDocuments__desktop___1gh_j
+  > div {
+  margin-bottom: 15px;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J div > div:first-child {
+  border-bottom: none;
+  border-top: none;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J
+  div[class*="ExpandCollapse__heading"] {
+  padding: 0;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J
+  div[class*="BaseCard__baseCard"] {
+  padding: 16px;
+}
+.StatementsAndDocuments__tilesContainer___1Ny-J
+  div[class*="BaseCard__baseCard"]:last-child {
+  margin: 0;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg {
+  font-family: -apple-system-body, Wells Fargo Sans, Verdana, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.9375rem;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg.StatementsAndDocuments__mobile___1U_6L {
+  padding: 24px 32px 0;
+  line-height: 22px;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg.StatementsAndDocuments__mobile___1U_6L
+  > div {
+  padding: 12px 0 11px;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg.StatementsAndDocuments__desktop___1gh_j {
+  margin: 20px 20px 15px 24px;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg.StatementsAndDocuments__desktop___1gh_j
+  > div {
+  margin-bottom: 15px;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg div > div:first-child {
+  border-bottom: none;
+  border-top: none;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg
+  div[class*="ExpandCollapse__heading"] {
+  padding: 0;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg
+  div[class*="BaseCard__baseCard"] {
+  padding: 16px;
+}
+.StatementsAndDocuments__tilesContainerFusion___YyGdg
+  div[class*="BaseCard__baseCard"]:last-child {
+  margin: 0;
+}

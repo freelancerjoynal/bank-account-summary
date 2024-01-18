@@ -1505,7 +1505,7 @@
                                                                                                         <span>
                                                                                                             <span
                                                                                                                 class="RisingUnderline__animated___lcUps">View
-                                                                                                                Statements
+                                                                                                                Statements page
                                                                                                                 &amp;
                                                                                                                 Documents</span>
                                                                                                         </span>
@@ -3651,8 +3651,17 @@
                                                                                 </g>
                                                                             </svg>
                                                                             <span
-                                                                                class="HotTaskItem__task-label___PntQ_ HotTaskItem__desktop___fROSJ">View
-                                                                                Statements</span>
+                                                                                class="HotTaskItem__task-label___PntQ_ HotTaskItem__desktop___fROSJ">
+                                                                                
+                                                                                <a
+                                                                                href="{{route('statements')}}"
+                                                                                style="
+                                                                                text-decoration:none;
+                                                                                font-size: 12px;
+                                                                                color: #44464a;
+                                                                                "
+                                                                                >View Statements</a>
+                                                                            </span>
                                                                         </button>
                                                                     </li>
                                                                     <li data-testid="hot-task manage.alerts"
