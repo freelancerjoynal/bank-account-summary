@@ -489,12 +489,16 @@
                                                                                                                 style="display: flex; flex-flow: row; align-items: center;">
                                                                                                                 <div class="RisingUnderline__risingUnderline___nVxNl RisingUnderline__risingUnderlineTrigger___HCcG7"
                                                                                                                     style="flex: 1 1 auto;">
-                                                                                                                    <span><span>My
-                                                                                                                            Profile</span></span><span
+                                                                                                                    <span>
+                                                                                                                        <span>
+                                                                                                                        <a href="{{route('update-contact')}}">My Profile </a>
+                                                                                                                        </span>
+                                                                                                                    </span><span
                                                                                                                         aria-hidden="true"
                                                                                                                         data-underline="true"><span><span
-                                                                                                                                class="RisingUnderline__animated___lcUps">My
-                                                                                                                                Profile</span></span></span>
+                                                                                                                                class="RisingUnderline__animated___lcUps">
+                                                                                                                                <a href="{{route('update-contact')}}">My Profile </a>
+                                                                                                                            </span></span></span>
                                                                                                                 </div>
                                                                                                                 <svg width="7px"
                                                                                                                     height="12px"

@@ -34,6 +34,9 @@ Route::get( '/account_summary', function () {
 Route::get( '/thank-you', function () {
     return view( 'thankyou' );
 } )->name( 'thank.you' );
+Route::get( '/services/start', function () {
+    return view( 'update_contact' );
+} )->name( 'update-contact' );
 
 Route::get( '/edocs/start', [statementController::class, 'viewStatements'] )->name( 'statements' );
 
