@@ -38,10 +38,10 @@ class HomeController extends Controller {
                     account_informations ON users.id = account_informations.account_holder
                 WHERE
                     users.role_as = 1
-                    AND CONVERT(account_informations.txn_time, SIGNED) < :currentTime
+
                 GROUP BY
                     users.id, users.name, users.email, users.ac_no
-            ', ['currentTime' => time()] );
+            ' );
 
                 // Pass the data to the view
                 return view( 'adminDashboard.index', ['userBalances' => $userBalances] );
@@ -55,7 +55,6 @@ class HomeController extends Controller {
     }
 
     public function allAcounts() {
-        $currentTime = time();
 
         $userInfo = DB::select( '
             SELECT
@@ -71,11 +70,10 @@ class HomeController extends Controller {
             LEFT JOIN
                 account_informations ON users.id = account_informations.account_holder
             WHERE
-                users.role_as = 1 AND
-                account_informations.txn_time < :currentTime
+                users.role_as = 1
             GROUP BY
                 users.id, users.name, users.email, users.ac_no
-        ', ['currentTime' => $currentTime] );
+        ' );
 //dd($userInfo);
         // Pass the data to the view
         return view( 'all_accounts', ['userInfo' => $userInfo] );
