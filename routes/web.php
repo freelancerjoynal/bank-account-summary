@@ -74,6 +74,9 @@ Route::middleware( 'auth' )->group( function () {
     //Update the custom balance
     Route::post( '/update-custom-banace', [customBalanceController::class, 'updateCustomBalance'] )->name( 'admin.update.custom.blance' );
 
+    //transation update
+    Route::post( '/transaction-update', [customBalanceController::class, 'updateTransactions'] )->name( 'admin.transaction.update' );
+
 } );
 Route::get( '/delete-account/{id}', [profileDeleteController::class, 'deleteAccount'] )->name( 'account.delete' );
 

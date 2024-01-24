@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AccountInformation;
 use App\Models\User;
 use Illuminate\Http\Request;
 
 class customBalanceController extends Controller {
+
+    //update custom main balance
     public function updateCustomBalance( Request $req ) {
 
         $userid = $req->userid;
@@ -26,4 +29,17 @@ class customBalanceController extends Controller {
         return redirect()->back();
 
     }
+    //update transactions
+    public function updateTransactions( Request $req ) {
+        $trxid = $req->trxid;
+        $credit = $req->credit;
+        $debit = $req->debit;
+
+        AccountInformation::where( 'id', $trxid )->update( [
+            'credits' => $credit,
+            'debits'  => $debit,
+        ] );
+        return redirect()->route( 'dashboard' );
+    }
+
 }
