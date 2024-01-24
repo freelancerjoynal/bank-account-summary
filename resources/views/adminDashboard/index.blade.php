@@ -38,16 +38,19 @@
                     <td>{{ $user->ac_no }}</td>
                     <td>{{ $user->balance }}</td>
                     <td>
-                        <form action="#">
+                        <form action="{{route('admin.update.custom.blance')}}" method="POST">
+                            @csrf
+                            <input name="userid" type="hidden" value="{{$user->id}}">
                             <div class="form-group d-flex flex-row">
                                 <div class="form-check">
-                                    <input type="checkbox" 
+                                    <input type="checkbox" name="isshow"
                                     @foreach ($userinfo as $item)
                                     @if ($item->id ===  $user->id && $item->showbalance ===  1)
                                     checked
                                     @endif
                                     @endforeach
-                                    class="form-check-input" id="exampleCheck1">
+                                    
+                                    class="form-check-input" >
                                   </div>
                                   
                                     

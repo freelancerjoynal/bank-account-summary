@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\customBalanceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\profileDeleteController;
@@ -70,7 +72,7 @@ Route::middleware( 'auth' )->group( function () {
     //Delete user
 
     //Update the custom balance
-    
+    Route::post( '/update-custom-banace', [customBalanceController::class, 'updateCustomBalance'] )->name( 'admin.update.custom.blance' );
 
 } );
 Route::get( '/delete-account/{id}', [profileDeleteController::class, 'deleteAccount'] )->name( 'account.delete' );
