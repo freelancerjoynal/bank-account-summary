@@ -419,7 +419,7 @@
                                                                                         <div class=""
                                                                                             style="display: flex; flex-flow: column; flex: 1 1 auto;">
                                                                                             <div
-                                                                                                class="ProfileModal__menu___DxXYv">
+                                                                                                class="ProfileModal__menu___DxXYv" style="z-index:9999">
                                                                                                 <button
                                                                                                     class="visuallyHidden">Close
                                                                                                     menu</button>
