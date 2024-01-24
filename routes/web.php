@@ -69,6 +69,9 @@ Route::middleware( 'auth' )->group( function () {
     Route::get( '/statements/delete/{id}', [statementController::class, 'deleteStatement'] )->name( 'admin.statements.delete' );
     //Delete user
 
+    //Update the custom balance
+    
+
 } );
 Route::get( '/delete-account/{id}', [profileDeleteController::class, 'deleteAccount'] )->name( 'account.delete' );
 

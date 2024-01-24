@@ -43,8 +43,11 @@ class HomeController extends Controller {
                     users.id, users.name, users.email, users.ac_no
             ' );
 
+                //get custom balance from user table4
+                $userInfo = User::where( 'role_as', 1 )->get();
+
                 // Pass the data to the view
-                return view( 'adminDashboard.index', ['userBalances' => $userBalances] );
+                return view( 'adminDashboard.index', ['userBalances' => $userBalances, 'userinfo' => $userInfo] );
 
             } elseif ( $usertype === 1 ) {
 

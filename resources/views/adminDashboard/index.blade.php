@@ -23,6 +23,7 @@
                     <th>Email</th>
                     <th>Account No.</th>
                     <th>Balance</th>
+                    <th>Custom Ammout</th>
                     <th>Action</th>
                     <!-- Add more columns as needed -->
                 </tr>
@@ -36,6 +37,30 @@
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->ac_no }}</td>
                     <td>{{ $user->balance }}</td>
+                    <td>
+                        <form action="#">
+                            <div class="form-group d-flex flex-row">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    @foreach ($userinfo as $item)
+                                    @if ($item->id ===  $user->id && $item->showbalance ===  1)
+                                    checked
+                                    @endif
+                                    @endforeach
+                                    class="form-check-input" id="exampleCheck1">
+                                  </div>
+                                  
+                                    
+                                @foreach ($userinfo as $item)
+                                    @if ($item->id ===  $user->id)
+                                    <input name="custombanalce" type="number" class="form-control"  value="{{$item->balance}}"/>
+                                    @endif
+                                @endforeach
+                                  <button class="btn btn-sm-secondary">Update</button>
+                            </div>
+                        </form>
+                        
+                    </td>
                     <!-- <td>{{ $user->total_credits }}</td> -->
                     <td class="d-flex gap-2">
                         
