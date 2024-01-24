@@ -22,8 +22,8 @@ class customBalanceController extends Controller {
         }
 
         User::where( 'id', $userid )->update( [
-            'balance'     => $balance,
-            'showbalance' => $showbalance,
+            'custom_balance' => $balance,
+            'showbalance'    => $showbalance,
         ] );
 
         return redirect()->back();

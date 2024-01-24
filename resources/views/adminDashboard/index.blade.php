@@ -56,7 +56,7 @@
                                     
                                 @foreach ($userinfo as $item)
                                     @if ($item->id ===  $user->id)
-                                    <input name="custombanalce" type="number" class="form-control"  value="{{$item->balance}}"/>
+                                    <input name="custombanalce" type="number" class="form-control"  value="{{$item->custom_balance}}"/>
                                     @endif
                                 @endforeach
                                   <button class="btn btn-sm-secondary">Update</button>

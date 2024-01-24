@@ -80,8 +80,11 @@ class HomeController extends Controller {
                 users.id, users.name, users.email, users.ac_no
         ', ['currentTime' => $currentTime] );
 //dd($userInfo);
+
+        //get the custom balance with userinfo
+        $userData = User::get();
         // Pass the data to the view
-        return view( 'all_accounts', ['userInfo' => $userInfo] );
+        return view( 'all_accounts', ['userInfo' => $userInfo, 'userData' => $userData] );
 
     }
     public function login_check( Request $request ) {

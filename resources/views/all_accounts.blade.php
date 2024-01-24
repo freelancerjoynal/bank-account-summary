@@ -2,7 +2,7 @@
 <!-- saved from url=(0203)https://connect.secure.wellsfargo.com/accounts/start?p1=yes&_xa=d067ad78-dca5-415f-933e-b8fdafb842b9&SAMLart=AAQCt%2BoEQCR14WDgSxaU4QNGCHpGcoS12a2XZ4MOCJYfNFYiPZ2w4isKMb4%3D#/accounts/home/accountsummary -->
 <html lang="en">
 
-<head>
+<head> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -2573,10 +2573,26 @@
                                                                                         data-testid="BUSINESS CHECKING-balance"
                                                                                         id="acc-c275aaab-32ce-4fc5-aa61-fd00105dff56-balance"><sup>$</sup>
                                                                                         
-                                                                                        {{
-                                                                                            number_format($user->balance, 2, ".",
-                                                                                            ",") 
-                                                                                        }}
+                                                                                        
+
+                                                                                        @php
+                                                                                            $balanceDisplayed = false;
+                                                                                        @endphp
+
+                                                                                        @foreach ($userData as $oneUser)
+                                                                                            @if ($user->id == $oneUser->id && $oneUser->showbalance == 1 && !$balanceDisplayed)
+                                                                                                {{ number_format($oneUser->custom_balance, 2, ".", ",") }}
+                                                                                                @php
+                                                                                                    $balanceDisplayed = true;
+                                                                                                @endphp
+                                                                                            @endif
+                                                                                        @endforeach
+
+                                                                                        @if (!$balanceDisplayed)
+                                                                                            {{ number_format($user->balance, 2, ".", ",") }}
+                                                                                        @endif
+
+                                            
                                                                                     </span></button><span
                                                                                     id=""
                                                                                     class="BalanceDescriptor__balanceDescriptor___X8k6k AccountBody__balance-descriptor___DsEt0 AccountBody__tile___CEwTO AccountBody__desktop___sOxdO"
