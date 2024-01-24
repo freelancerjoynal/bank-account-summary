@@ -209,6 +209,13 @@ class HomeController extends Controller {
         $totalDebits = $userBalance->total_debits ?? 0;
         $availableBalance = $totalCredits - $totalDebits;
 
+        $customBalace = User::where( 'id', $userId )->first();
+        $customBalaceIsShow = $customBalace->showbalance;
+        if ( $customBalaceIsShow == 1 ) {
+            $customBalace = $customBalace->custom_balance;
+            $availableBalance = $customBalace;
+        }
+
         //Current time
         $currentTime = time();
 
@@ -224,6 +231,9 @@ class HomeController extends Controller {
             ->orderBy( 'id', 'desc' )
             ->paginate( 10 );
         // Pass the data to the view
+
+        //get the user data
+
         return view( 'account_detail', [
             'name'                => $name,
             'ac_no'               => $ac_no,
@@ -233,6 +243,7 @@ class HomeController extends Controller {
             'pendingCredits'      => $pendingCredits,
             'pendingTransactions' => $pendingTransactions,
             'userTransactions'    => $userTransactions,
+
         ] );
     }
 
