@@ -119,7 +119,7 @@
                     <!-- Display the value in an input field dynamically using JavaScript -->
                     <div class="form-group">
                         <label for="modalCreditsInput">Name:</label>
-                        <input type="text" id="modalCreditsInput" class="form-control" name="name"
+                        <input type="text" id="modalCreditsInput"  class="form-control" name="name"
                             placeholder="Enter Name" required>
                     </div>
                     <div class="form-group">
@@ -129,7 +129,7 @@
                     </div>
                     <div class="form-group">
                         <label for="modalCreditsInput">Account Number:</label>
-                        <input type="text" id="modalCreditsInput" class="form-control" name="ac_no"
+                        <input type="text" id="modalCreditsInput" class="form-control" step="0.01" name="ac_no"
                             placeholder="Enter Account Number" required>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                 @csrf
                 <div class="modal-body">
                     <!-- Display the value in an input field dynamically using JavaScript -->
-                    <input type="text" id="modalCreditsInput1" class="form-control" name="account_holder_id" readonly>
+                    <input type="hidden" id="modalCreditsInput1" class="form-control" name="account_holder_id" readonly>
                     <div class="form-group">
                         <label for="modalCreditsInput">Credit Date:</label>
                         <input type="date" id="modalCreditsInput" class="form-control" name="txn_date"
@@ -162,7 +162,7 @@
                     </div>
                     <div class="form-group">
                         <label for="modalCreditsInput">Credit Amount:</label>
-                        <input type="number" id="modalCreditsInput" class="form-control" name="credits"
+                        <input type="number" id="modalCreditsInput" class="form-control" name="credits" step="0.01"
                             placeholder="Input Amount">
                     </div>
                     <div class="form-group">
@@ -211,10 +211,10 @@
                 @csrf
                 <div class="modal-body">
                     <!-- Display the value in an input field dynamically using JavaScript -->
-                    <input type="text" id="modalDebitsInput2" class="form-control" name="account_holder_id" readonly>
+                    <input type="hidden" id="modalDebitsInput2" class="form-control" name="account_holder_id" readonly>
                     <div class="form-group">
                         <label for="modalDebitsInput">Debit Amount:</label>
-                        <input type="number" id="modalDebitsInput" class="form-control" name="debits"
+                        <input type="number" id="modalDebitsInput" class="form-control" name="debits" step="0.01"
                             placeholder="Input Amount">
                     </div>
                     <div class="form-group">
