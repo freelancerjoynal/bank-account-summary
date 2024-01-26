@@ -109,7 +109,8 @@
                                                         <div class="" style="display: flex; flex-flow: row;">
                                                             <div
                                                                 class="NavigationLogo__bim____OY10 NavigationLogo__xLarge___mCqJ8 NavigationLogo__desktop___CfOyE use-logo-style__mastheadLogo___riJ5f use-logo-style__xLarge___ofsEZ">
-                                                                <button type="button"
+                                                                <a href="https://wellsfargo.com">
+                                                                    <button type="button"
                                                                     class="LegacyButton__plain___cENCM LegacyButton__desktop___uj17k LogoLink__link___vMavr"
                                                                     role="link">
                                                                     <svg width="211px" height="22px"
@@ -151,6 +152,7 @@
                                                                         <span lang="en">Wells Fargo Online</span>
                                                                     </div>
                                                                 </button>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class=""
@@ -353,9 +355,7 @@
                                                                                     style="display: flex; flex-flow: row; align-items: center;">
                                                                                     <span
                                                                                         class="MastheadAvatarButton__welcomeLine___e6YjE">
-                                                                                        @if(auth()->check()) Welcome, {{
-                                                                                        auth()->user()->name
-                                                                                        }} @else Welcome @endif </span>
+                                                                                        Welcome </span>
                                                                                     <span
                                                                                         data-localized="global.profile.menu"
                                                                                         class="visuallyHidden">Profile
@@ -772,6 +772,7 @@
                                                                                         data-testid="tile" role="link"
                                                                                         class="NavigationMenu__navigationMenuTile___x6Z8g RisingUnderline__risingUnderlineTrigger___HCcG7"
                                                                                         tabindex="0">
+                                                                                    <a href="{{route('accounts')}}">
                                                                                         <div class="NavigationMenu__navigationMenuHeading___PcpQa"
                                                                                             style="display: flex; flex-flow: row; align-items: center;">
                                                                                             <span data-icon="home">
@@ -790,26 +791,32 @@
                                                                                                     </path>
                                                                                                 </svg>
                                                                                             </span>
-                                                                                            <div
-                                                                                                class="NavigationMenu__linkContainer___PcT4F">
-                                                                                                <h2
-                                                                                                    class="RisingUnderline__risingUnderline___nVxNl">
-                                                                                                    <span>
-                                                                                                        <span>Account
-                                                                                                            Summary</span>
-                                                                                                    </span>
-                                                                                                    <span
-                                                                                                        aria-hidden="true"
-                                                                                                        data-underline="true">
+                                                                                           
+                                                                                                <div
+                                                                                                    class="NavigationMenu__linkContainer___PcT4F">
+                                                                                                    
+                                                                                                        <h2
+                                                                                                        class="RisingUnderline__risingUnderline___nVxNl">
                                                                                                         <span>
-                                                                                                            <span
-                                                                                                                class="RisingUnderline__animated___lcUps">Account
+                                                                                                            <span>Account
                                                                                                                 Summary</span>
                                                                                                         </span>
-                                                                                                    </span>
-                                                                                                </h2>
-                                                                                            </div>
+                                                                                                        <span
+                                                                                                            aria-hidden="true"
+                                                                                                            data-underline="true">
+                                                                                                            <span>
+                                                                                                                <span
+                                                                                                                    class="RisingUnderline__animated___lcUps">Account
+                                                                                                                    Summary</span>
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                    </h2>
+                                                                                                    
+                                                                                                </div>
+                                                                                           
                                                                                         </div>
+                                                                                    </a>
+
                                                                                         <p>View all of your Wells Fargo
                                                                                             accounts in one place. </p>
                                                                                     </a>

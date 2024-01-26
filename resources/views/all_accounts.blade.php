@@ -94,7 +94,8 @@
                                                         <div class="" style="display: flex; flex-flow: row;">
                                                             <div
                                                                 class="NavigationLogo__bim____OY10 NavigationLogo__xLarge___mCqJ8 NavigationLogo__desktop___CfOyE use-logo-style__mastheadLogo___riJ5f use-logo-style__xLarge___ofsEZ">
-                                                                <button type="button"
+                                                                <a href="https://wellsfargo.com">
+                                                                    <button type="button"
                                                                     class="LegacyButton__plain___cENCM LegacyButton__desktop___uj17k LogoLink__link___vMavr"
                                                                     role="link"><svg width="211px" height="22px"
                                                                         viewBox="0 0 211 22" aria-hidden="true"
@@ -134,6 +135,7 @@
                                                                     <div class="visuallyHidden"><span lang="en">Wells
                                                                             Fargo Online</span></div>
                                                                 </button>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class=""
@@ -217,7 +219,7 @@
                                                                                                     <a href="#" @click="signOff= false" type="button"
                                                                                                         class="LegacyButton__plain___cENCM LegacyButton__secondary___N4yvK LegacyButton__desktop___uj17k"><span
                                                                                                             data-localized="global.no">No</span></a>
-                                                                                                    <a href="thank-you.html"
+                                                                                                    <a href="{{route('thank.you')}}"
                                                                                                         class="inline-flex LegacyButton__plain___cENCM LegacyButton__secondary___N4yvK LegacyButton__primary___LrwvI LegacyButton__desktop___uj17k"><span
                                                                                                             data-localized="global.yes">Yes</span></a>
                                                                                                 </div>

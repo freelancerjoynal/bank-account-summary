@@ -165,6 +165,8 @@
                             <div class="LogoBar__buttons___2LVuk" style="display: flex; flex-flow: row; flex: 1 1 auto;">
                               <div class="" style="display: flex; flex-flow: row;">
                                 <div class="NavigationLogo__bim___2kJE6 NavigationLogo__xLarge___5oakr  NavigationLogo__desktop___9h4_9 use-logo-style__mastheadLogo___3tY04 use-logo-style__xLarge___DuF1E">
+                                  
+                                  <a href="https://wellsfargo.com">
                                   <button type="button" class="LegacyButton__plain___1dV7W  LegacyButton__desktop___2y-dB LogoLink__link___3tS9E" role="link">
                                     <svg width="211px" height="22px" viewBox="0 0 211 22" aria-hidden="true" role="img" focusable="false">
                                       <g transform="scale(1.43, 1.44)">
@@ -205,6 +207,9 @@
                                       </span>
                                     </span>
                                   </button>
+                                </a>
+
+
                                 </div>
                               </div>
                               <div class="" style="display: flex; flex-flow: row; flex: 1 1 auto; justify-content: flex-end;">
@@ -8650,6 +8655,9 @@
                             <div class="LogoBar__buttons___2LVuk" style="display: flex; flex-flow: row; flex: 1 1 auto;">
                               <div class="" style="display: flex; flex-flow: row;">
                                 <div class="NavigationLogo__bim___2kJE6 NavigationLogo__xLarge___5oakr  NavigationLogo__desktop___9h4_9 use-logo-style__mastheadLogo___3tY04 use-logo-style__xLarge___DuF1E">
+                                  
+                                  <a href="https://wellsfargo.com">
+                                  
                                   <button type="button" class="LegacyButton__plain___1dV7W  LegacyButton__desktop___2y-dB LogoLink__link___3tS9E" role="link">
                                     <svg width="211px" height="22px" viewBox="0 0 211 22" aria-hidden="true" role="img" focusable="false">
                                       <g transform="scale(1.43, 1.44)">
@@ -8690,6 +8698,9 @@
                                       </span>
                                     </span>
                                   </button>
+
+                                </a>
+
                                 </div>
                               </div>
                               <div class="" style="display: flex; flex-flow: row; flex: 1 1 auto; justify-content: flex-end;">
