@@ -145,6 +145,7 @@ class HomeController extends Controller {
         $debits = $request->input( 'debits' );
         $category = $request->input( 'category' );
         $description = $request->input( 'description' );
+        $txn_date = $request->input( 'debits_txn_date' );
 
         // Perform the database update
         DB::table( 'account_informations' )->insert( [
@@ -153,6 +154,10 @@ class HomeController extends Controller {
             'credits'        => 0, // Assuming you have a 'debits' column in your table
             'category' => $category,
             'description'    => $description,
+
+            'txn_date'       => $txn_date,
+            'txn_time'       => strtotime( $txn_date ),
+
             'created_at'     => now(),
             'updated_at'     => now(),
         ] );

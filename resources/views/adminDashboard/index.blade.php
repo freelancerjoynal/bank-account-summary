@@ -158,7 +158,7 @@
                     <div class="form-group">
                         <label for="modalCreditsInput">Credit Date:</label>
                         <input type="date" id="modalCreditsInput" class="form-control" name="txn_date"
-                            placeholder="txn_date">
+                            placeholder="txn_date" required>
                     </div>
                     <div class="form-group">
                         <label for="modalCreditsInput">Credit Amount:</label>
@@ -212,6 +212,11 @@
                 <div class="modal-body">
                     <!-- Display the value in an input field dynamically using JavaScript -->
                     <input type="hidden" id="modalDebitsInput2" class="form-control" name="account_holder_id" readonly>
+                    <div class="form-group">
+                        <label for="debitDate">Select Date:</label>
+                        <input type="date" id="debitDate" class="form-control" name="debits_txn_date" 
+                            placeholder="Input Amount" required>
+                    </div>
                     <div class="form-group">
                         <label for="modalDebitsInput">Debit Amount:</label>
                         <input type="number" id="modalDebitsInput" class="form-control" name="debits" step="0.01"
