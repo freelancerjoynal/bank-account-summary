@@ -202,6 +202,7 @@ class HomeController extends Controller {
         // Get the sum of credits for the upcoming transactions
         $pendingCredits = AccountInformation::where( 'txn_time', '>', $currentTime - 3600 * 24 )
             ->sum( 'credits' );
+        $pendingDebits = AccountInformation::where( 'txn_time', '>', $currentTime - 3600 * 24 )->sum( 'debits' );
 
         // Get the sum of credits and debits for the user
         $userBalance = AccountInformation::selectRaw( 'SUM(credits) as total_credits, SUM(debits) as total_debits' )
@@ -246,6 +247,7 @@ class HomeController extends Controller {
             'totalDebits'         => $totalDebits,
             'availableBalance'    => $availableBalance,
             'pendingCredits'      => $pendingCredits,
+            'pendingDebits'       => $pendingDebits,
             'pendingTransactions' => $pendingTransactions,
             'userTransactions'    => $userTransactions,
 

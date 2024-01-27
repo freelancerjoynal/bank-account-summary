@@ -3777,7 +3777,13 @@
                                                                             <span class="Activity__balance___tGGaO">
                                                                               
                                                                             
-                                                                                <sup>$</sup>0.00 </span>
+                                                                                <sup>$</sup>
+                                                                                {{
+                                                                                    number_format($pendingDebits, 2, ".",
+                                                                                    ",")
+                                                                                    
+                                                                                    }}
+                                                                             </span>
                                                                             </span>
                                                                         </li>
                                                                         <li
