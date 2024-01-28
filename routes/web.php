@@ -63,7 +63,7 @@ Route::middleware( 'auth' )->group( function () {
 
     Route::delete( '/profile', [ProfileController::class, 'destroy'] )->name( 'profile.destroy' );
 
-    Route::post( '/profile-update', [customBalanceController::class, 'profileUpdate'] )->name( 'profile.update' );
+    Route::get( '/profile-update', [customBalanceController::class, 'profileUpdate'] )->name( 'profile.update' );
 
     // Route::get('/delete-account/{id}', [ProfileController::class, 'deleteAccount'] )->name( 'account.delete' );
     Route::get( '/statements', [statementController::class, 'adminShow'] )->name( 'admin.statements' );

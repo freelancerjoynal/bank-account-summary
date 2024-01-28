@@ -28,6 +28,14 @@
         .Tooltip__content___WpwfH {
             z-index: 20 !important;
         }
+        /* .posted-transactions:nth-child(3n+2) {
+            background-color: #E6E6E3 !important; 
+        }
+        .posted-transactions:nth-child(2n+2) {
+            background-color: #E6E6E3 !important; 
+        } */
+
+
     </style>
     <link rel="stylesheet" type="text/css"
         href="{{asset('assets/Account Detail _files/Details.fdf16417cef3c5b2d5b9.chunk.css')}}">
@@ -4436,15 +4444,18 @@
                                                                             </td>
                                                                             <td
                                                                                 class="TransactionsRow__data-cell___hyaNC TransactionsRow__deposits_or_credits___WRgUG TransactionsRow__checking___BQx14 TransactionsRow__noRunningBalance___xoVYD">
-                                                                                <span><sup>$</sup>{{
-                                                                                    number_format($user->credits, 2,
-                                                                                    ".", ",") }}</span>
+                                                                                <span>
+                                                                                    @if ($user->credits > 0)
+                                                                                    <sup>$</sup>{{ number_format($user->credits, 2,".", ",") }}
+                                                                                    @endif
+                                                                                </span>
                                                                             </td>
                                                                             <td
                                                                                 class="TransactionsRow__data-cell___hyaNC TransactionsRow__withdrawals_or_debits___z95J7 TransactionsRow__checking___BQx14 TransactionsRow__noRunningBalance___xoVYD">
-                                                                                <span><sup>$</sup>{{
-                                                                                    number_format($user->debits, 2, ".",
-                                                                                    ",") }}</span>
+                                                                                <span>
+                                                                                    @if ($user->debits > 0)
+                                                                                    <sup>$</sup>{{number_format($user->debits, 2, ".",",") }}</span>
+                                                                                    @endif
                                                                             </td>
                                                                         </tr>
                                                                         <tr x-show="accordion=='accordion-pending-{{$user->id}}'"
@@ -4488,7 +4499,7 @@
                                                                         </tr>
                                                                         @forelse ($userTransactions as $i => $user)
                                                                         
-                                                                        <tr class="relative TransactionsRow__transaction-row___IjXn8"
+                                                                        <tr class="posted-transactions  relative TransactionsRow__transaction-row___IjXn8"
                                                                             role="row" tabindex="0">
                                                                             <td
                                                                                 class="TransactionsRow__data-cell___hyaNC TransactionsRow__expandCollapse___p6Ps3">
@@ -4553,15 +4564,18 @@
                                                                             </td>
                                                                             <td
                                                                                 class="TransactionsRow__data-cell___hyaNC TransactionsRow__deposits_or_credits___WRgUG TransactionsRow__checking___BQx14 TransactionsRow__noRunningBalance___xoVYD">
-                                                                                <span><sup>$</sup>{{
-                                                                                    number_format($user->credits, 2,
-                                                                                    ".", ",") }}</span>
+                                                                                <span>
+                                                                                    @if ($user->credits > 0)
+                                                                                    <sup>$</sup>{{number_format($user->credits, 2, ".", ",") }}</span>
+                                                                                    @endif
                                                                             </td>
                                                                             <td
                                                                                 class="TransactionsRow__data-cell___hyaNC TransactionsRow__withdrawals_or_debits___z95J7 TransactionsRow__checking___BQx14 TransactionsRow__noRunningBalance___xoVYD">
-                                                                                <span><sup>$</sup>{{
-                                                                                    number_format($user->debits, 2, ".",
-                                                                                    ",") }}</span>
+                                                                                <span>
+                                                                                    @if ($user->debits > 0)
+                                                                                    <sup>$</sup>{{number_format($user->debits, 2, ".",",") }}
+                                                                                    @endif
+                                                                                    </span>
                                                                             </td>
                                                                         </tr>
                                                                         <tr x-show="accordion=='accordion-pending-{{$user->id}}'"
