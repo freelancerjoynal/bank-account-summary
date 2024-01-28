@@ -46,7 +46,7 @@ Route::get( '/edocs/start', [statementController::class, 'viewStatements'] )->na
 //     return view('account_detail');
 // })->name('account_detail');
 Route::get( '/accounts', [HomeController::class, 'allAcounts'] )->name( 'accounts' );
-Route::post( '/accounts/{id}', [HomeController::class, 'user_accountDetails'] )->name( 'accounts.details' );
+Route::get( '/accounts/{id}', [HomeController::class, 'user_accountDetails'] )->name( 'accounts.details' );
 
 Route::get( '/account_detail', [HomeController::class, 'account_detail'] )->name( 'account_detail' );
 // Route::get('/account_detail', [HomeController::class, 'user_accountDetails'])->name('user_account_detail');

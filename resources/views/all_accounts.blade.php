@@ -2543,8 +2543,11 @@
                                                                                             <input name="id" type="hidden" value="{{$user->id}}">
                                                                                             @csrf
                                                                                         </form>
+
+
+
                                                                                         
-                                                                                        <a href="{{substr($user->ac_no, -4)}}" onclick="document.getElementById('submitform-{{$user->id}}').submit(); return false;"
+                                                                                        <a href="{{route('accounts.details', ['id' => $user->id] )}}"
                                                                                             style="text-decoration: none"
                                                                                             class="AccountHeader__account-header___jBOxU AccountHeader__tile___VoexP AccountHeader__desktop___ZygJh">
                                                                                             <span
