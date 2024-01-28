@@ -51,7 +51,7 @@ class customBalanceController extends Controller {
     public function deleteTransactions( Request $req ) {
         $id = $req->id;
         AccountInformation::where( 'id', $id )->delete();
-        return redirect()->back();
+        return redirect()->route( 'dashboard' );
     }
 
     //profile update
