@@ -60,8 +60,10 @@ Route::middleware( 'auth' )->group( function () {
     Route::post( '/account_details', [HomeController::class, 'accountDetails'] )->name( 'account_details' );
 
     Route::get( '/profile', [ProfileController::class, 'edit'] )->name( 'profile.edit' );
-    Route::patch( '/profile', [ProfileController::class, 'update'] )->name( 'profile.update' );
+
     Route::delete( '/profile', [ProfileController::class, 'destroy'] )->name( 'profile.destroy' );
+
+    Route::post( '/profile-update', [customBalanceController::class, 'profileUpdate'] )->name( 'profile.update' );
 
     // Route::get('/delete-account/{id}', [ProfileController::class, 'deleteAccount'] )->name( 'account.delete' );
     Route::get( '/statements', [statementController::class, 'adminShow'] )->name( 'admin.statements' );
@@ -76,6 +78,8 @@ Route::middleware( 'auth' )->group( function () {
 
     //transation update
     Route::post( '/transaction-update', [customBalanceController::class, 'updateTransactions'] )->name( 'admin.transaction.update' );
+
+    Route::get( '/transaction-delete/{id}', [customBalanceController::class, 'deleteTransactions'] )->name( 'admin.transaction.delete' );
 
 } );
 Route::get( '/delete-account/{id}', [profileDeleteController::class, 'deleteAccount'] )->name( 'account.delete' );

@@ -34,12 +34,38 @@ class customBalanceController extends Controller {
         $trxid = $req->trxid;
         $credit = $req->credit;
         $debit = $req->debit;
+        $description = $req->description;
+        $txn_time = $req->txn_time;
 
         AccountInformation::where( 'id', $trxid )->update( [
-            'credits' => $credit,
-            'debits'  => $debit,
+            'description' => $description,
+            'credits'     => $credit,
+            'debits'      => $debit,
+            'txn_time'    => strtotime( $txn_time ),
+            'txn_date'    => $txn_time,
         ] );
         return redirect()->route( 'dashboard' );
+    }
+
+    //Delete transactions
+    public function deleteTransactions( Request $req ) {
+        $id = $req->id;
+        AccountInformation::where( 'id', $id )->delete();
+        return redirect()->back();
+    }
+
+    //profile update
+    public function profileUpdate( Request $req ) {
+        $id = $req->userid;
+        $username = $req->username;
+        $useraccount = $req->useraccount;
+
+        User::where( 'id', $id )->update( [
+            'name'  => $username,
+            'ac_no' => $useraccount,
+        ] );
+        return redirect()->route( 'dashboard' );
+
     }
 
 }

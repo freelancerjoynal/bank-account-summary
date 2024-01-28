@@ -109,7 +109,7 @@ class HomeController extends Controller {
         ] );
 
         // Extract data from the request
-        $accountHolderId = $request->input( 'account_holder_id' );
+        $accountHolderId = $request->input( 'account_holder_id' ); 
         $credits = $request->input( 'credits' );
         $category = $request->input( 'category' );
         $description = $request->input( 'description' );
@@ -229,7 +229,7 @@ class HomeController extends Controller {
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) < ?", [$currentTime - 3600 * 24] )
             ->orderBy( 'id', 'desc' )
-            ->paginate( 10 );
+            ->paginate( 50 );
 
         // pending transaction
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )

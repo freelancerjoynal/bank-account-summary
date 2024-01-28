@@ -1846,7 +1846,7 @@
                                     alt="">
                             </div>
                             <div class="marquee-content presentedElement">
-                                <h2>Earn a $200 cash rewards bonus</h2>
+                                <h2>Earn a $300 cash rewards bonus</h2>
                                 <p class="">$0 annual fee. Terms apply.</p>
                                 <div class="ps-padding">
                                     <a class="ps-btn-secondary" data-cid="tcm:402-227175-16"
