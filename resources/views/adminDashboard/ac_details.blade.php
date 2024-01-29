@@ -67,9 +67,9 @@
 
                                         <input name="description" class="form-control mx-2" type="text" value="{{$user->description}}">
 
-                                        <input name="credit" class="form-control mx-2" type="number" name="credit" value="{{ $user->credits}}">
+                                        <input name="credit" class="form-control mx-2" type="number" step="0.01" name="credit" value="{{ $user->credits}}">
                                         
-                                        <input name="debit" class="form-control mx-2" type="number" name="debit"  value="{{ $user->debits}}">
+                                        <input name="debit" class="form-control mx-2" type="number" step="0.01" name="debit"  value="{{ $user->debits}}">
                                         <button class="btn" type="submit">Update</button>
                                         <a href="{{ route('admin.transaction.delete', ['id' => $user->id]) }}" class="btn btn-sm btn-danger">Delete</a>
                                     </div>

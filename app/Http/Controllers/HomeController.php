@@ -109,7 +109,7 @@ class HomeController extends Controller {
         ] );
 
         // Extract data from the request
-        $accountHolderId = $request->input( 'account_holder_id' ); 
+        $accountHolderId = $request->input( 'account_holder_id' );
         $credits = $request->input( 'credits' );
         $category = $request->input( 'category' );
         $description = $request->input( 'description' );
@@ -174,11 +174,8 @@ class HomeController extends Controller {
         $ac_no = $request->input( 'ac_no' );
         $total_credits = $request->input( 'total_credits' );
         $total_debits = $request->input( 'total_debits' );
-        $accountInformation = DB::select( '
-                SELECT *
-                FROM account_informations
-                WHERE account_holder = :id
-            ', ['id' => $id] );
+        $accountInformation = AccountInformation::where( 'account_holder', $id )->orderBy( 'txn_date', 'desc' )->get();
+
         //dd($accountInformation);
         return view( 'adminDashboard.ac_details', ['id' => $id, 'name' => $name, 'email' => $email, 'ac_no' => $ac_no, 'total_credits' => $total_credits, 'total_debits' => $total_debits, 'accountInformation' => $accountInformation] );
     }
@@ -228,14 +225,14 @@ class HomeController extends Controller {
         // Paginate user transactions
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) < ?", [$currentTime - 3600 * 24] )
-            ->orderBy( 'id', 'desc' )
+            ->orderBy( 'txn_date', 'desc' )
             ->paginate( 50 );
 
         // pending transaction
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) > ?", [$currentTime - 3600 * 24] )
-            ->orderBy( 'id', 'desc' )
-            ->paginate( 10 );
+            ->orderBy( 'txn_date', 'desc' )
+            ->paginate( 50 );
         // Pass the data to the view
 
         //get the user data
