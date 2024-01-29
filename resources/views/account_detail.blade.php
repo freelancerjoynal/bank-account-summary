@@ -28,10 +28,10 @@
         .Tooltip__content___WpwfH {
             z-index: 20 !important;
         }
-        /* .posted-transactions:nth-child(3n+2) {
+        .posted-transactions:nth-child(2n+2) {
             background-color: #E6E6E3 !important; 
         }
-        .posted-transactions:nth-child(2n+2) {
+        /* .posted-transactions:nth-child(7n+2) {
             background-color: #E6E6E3 !important; 
         } */
 
@@ -4377,7 +4377,13 @@
 
                                                                         @forelse ($pendingTransactions as $i => $user)
                                                                         
-                                                                    
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
 
                                                                         
                                                                         <tr class="relative TransactionsRow__transaction-row___IjXn8"
@@ -4498,6 +4504,14 @@
                                                                             </th>
                                                                         </tr>
                                                                         @forelse ($userTransactions as $i => $user)
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
                                                                         
                                                                         <tr class="posted-transactions  relative TransactionsRow__transaction-row___IjXn8"
                                                                             role="row" tabindex="0">
