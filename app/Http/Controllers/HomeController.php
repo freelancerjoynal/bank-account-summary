@@ -226,7 +226,7 @@ class HomeController extends Controller {
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) < ?", [$currentTime - 3600 * 24] )
             ->orderBy( 'txn_date', 'desc' )
-            ->paginate( 50 );
+            ->paginate( 8 );
 
         // pending transaction
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )

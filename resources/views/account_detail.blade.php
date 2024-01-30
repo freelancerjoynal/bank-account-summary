@@ -4176,80 +4176,168 @@
                                                                         Pagination</span>
                                                                     <ul>
                                                                         <li>
-                                                                            <button
-                                                                                class="TransactionPages__nav-link___AOyJw TransactionPages__disabled___iOSgu inline-flex items-center gap-2"
-                                                                                aria-disabled="true"
-                                                                                data-testid="pagination-first"
-                                                                                disabled="">
-                                                                                <svg x="0px" y="0px" width="9.3px"
-                                                                                    height="15.6px"
-                                                                                    viewBox="0 0 9.3 15.6"
-                                                                                    enable-background="new 0 0 9.3 15.6"
-                                                                                    aria-hidden="true" role="img"
-                                                                                    class="PageLeftArrowIcon__leftArrow___rOUht"
-                                                                                    focusable="false">
-                                                                                    <path fill="#bbb9ac" d="M1.16,7.142C1.157,7.15,1.155,7.158,1.151,7.166c-0.038,0.077-0.07,0.157-0.095,0.239
- C1.051,7.423,1.05,7.443,1.046,7.461c-0.018,0.071-0.033,0.143-0.04,0.215C1.001,7.721,1.005,7.767,1.004,7.813
- C1.005,7.859,1.001,7.904,1.006,7.95c0.007,0.072,0.022,0.144,0.04,0.215C1.05,8.183,1.051,8.203,1.057,8.221
- c0.024,0.083,0.057,0.163,0.097,0.242C1.156,8.47,1.158,8.477,1.16,8.483c0.043,0.083,0.095,0.162,0.153,0.238
- c0.001,0.001,0.002,0.003,0.003,0.004c0.01,0.013,0.016,0.026,0.026,0.039l5.054,6.023c0.523,0.623,1.453,0.705,2.076,0.181
- c0.624-0.522,0.705-1.452,0.182-2.076L4.393,7.813l4.262-5.08C9.178,2.11,9.096,1.18,8.473,0.657
- C7.85,0.135,6.919,0.215,6.396,0.838L1.343,6.863C1.332,6.875,1.326,6.888,1.317,6.901C1.314,6.904,1.313,6.907,1.311,6.91
- C1.253,6.984,1.202,7.062,1.16,7.142z"></path>
-                                                                                </svg>
-                                                                                <span
-                                                                                    data-localized="details.transaction.pagination.first">First</span>
-                                                                            </button>
+                                                                            @if ($userTransactions->previousPageUrl())
+                                                                                <a href="{{ $userTransactions->url(1) }}" rel="first">
+                                                                                    <button
+                                                                                        class="TransactionPages__nav-link___AOyJw inline-flex gap-2 items-center"
+                                                                                        data-testid="pagination-next"
+                                                                                        aria-disabled="false">
+                                                                                        <svg x="0px" y="0px" width="9.3px" style="transform: rotate(180deg); padding-right: 5px;"
+                                                                                            height="15.6px"
+                                                                                            viewBox="0 0 9.3 15.6"
+                                                                                            enable-background="new 0 0 9.3 15.6"
+                                                                                            aria-hidden="true" role="img"
+                                                                                            class="PageRightArrowIcon__rightArrow___HYk6m"
+                                                                                            focusable="false">
+                                                                                            <path fill="#00698c" d="M7.841,8.168c0.003-0.006,0.004-0.012,0.007-0.018c0.04-0.08,0.072-0.16,0.097-0.244
+                                                                                            C7.95,7.889,7.951,7.87,7.956,7.851C7.973,7.78,7.988,7.708,7.995,7.636C8,7.59,7.996,7.545,7.997,7.5
+                                                                                            C7.996,7.454,8,7.408,7.995,7.362C7.988,7.29,7.973,7.219,7.956,7.148C7.951,7.129,7.95,7.11,7.944,7.091
+                                                                                            C7.92,7.008,7.888,6.928,7.848,6.849C7.845,6.842,7.844,6.835,7.841,6.83C7.798,6.747,7.746,6.667,7.688,6.591
+                                                                                            C7.687,6.59,7.686,6.588,7.685,6.587c-0.01-0.013-0.016-0.026-0.026-0.039L2.604,0.525C2.082-0.098,1.152-0.179,0.528,0.344
+                                                                                            c-0.624,0.522-0.704,1.453-0.182,2.077L4.608,7.5l-4.262,5.078c-0.522,0.624-0.441,1.553,0.183,2.077
+                                                                                            c0.623,0.522,1.554,0.441,2.076-0.183L7.658,8.45c0.011-0.012,0.017-0.025,0.026-0.039C7.686,8.41,7.686,8.409,7.687,8.408
+                                                                                            C7.746,8.332,7.798,8.252,7.841,8.168z"></path>
+                                                                                        </svg>
+                                                                                        <span
+                                                                                            data-localized="details.transaction.pagination.next">First</span>
+                                                                                    </button>
+                                                                                </a>
+                                                                                @else
+                                                                                    <button
+                                                                                        class="TransactionPages__nav-link___AOyJw TransactionPages__disabled___iOSgu inline-flex gap-2 items-center"
+                                                                                        aria-disabled="true"
+                                                                                        data-testid="pagination-first"
+                                                                                        disabled="">
+                                                                                        <svg x="0px" y="0px" width="9.3px"
+                                                                                            height="15.6px"
+                                                                                            viewBox="0 0 9.3 15.6"
+                                                                                            enable-background="new 0 0 9.3 15.6"
+                                                                                            aria-hidden="true" role="img"
+                                                                                            class="PageLeftArrowIcon__leftArrow___rOUht"
+                                                                                            focusable="false">
+                                                                                            <path fill="#bbb9ac" d="M1.16,7.142C1.157,7.15,1.155,7.158,1.151,7.166c-0.038,0.077-0.07,0.157-0.095,0.239
+                                                                                            C1.051,7.423,1.05,7.443,1.046,7.461c-0.018,0.071-0.033,0.143-0.04,0.215C1.001,7.721,1.005,7.767,1.004,7.813
+                                                                                            C1.005,7.859,1.001,7.904,1.006,7.95c0.007,0.072,0.022,0.144,0.04,0.215C1.05,8.183,1.051,8.203,1.057,8.221
+                                                                                            c0.024,0.083,0.057,0.163,0.097,0.242C1.156,8.47,1.158,8.477,1.16,8.483c0.043,0.083,0.095,0.162,0.153,0.238
+                                                                                            c0.001,0.001,0.002,0.003,0.003,0.004c0.01,0.013,0.016,0.026,0.026,0.039l5.054,6.023c0.523,0.623,1.453,0.705,2.076,0.181
+                                                                                            c0.624-0.522,0.705-1.452,0.182-2.076L4.393,7.813l4.262-5.08C9.178,2.11,9.096,1.18,8.473,0.657
+                                                                                            C7.85,0.135,6.919,0.215,6.396,0.838L1.343,6.863C1.332,6.875,1.326,6.888,1.317,6.901C1.314,6.904,1.313,6.907,1.311,6.91
+                                                                                            C1.253,6.984,1.202,7.062,1.16,7.142z"></path>
+                                                                                        </svg>
+                                                                                        <span
+                                                                                            data-localized="details.transaction.pagination.first">First</span>
+                                                                                    </button>
+                                                                                @endif
                                                                         </li>
                                                                         <li>
-                                                                            <button
-                                                                                class="TransactionPages__nav-link___AOyJw TransactionPages__disabled___iOSgu inline-flex items-center gap-2"
-                                                                                data-testid="pagination-previous"
-                                                                                aria-disabled="true" disabled="">
-                                                                                <svg x="0px" y="0px" width="9.3px"
-                                                                                    height="15.6px"
-                                                                                    viewBox="0 0 9.3 15.6"
-                                                                                    enable-background="new 0 0 9.3 15.6"
-                                                                                    aria-hidden="true" role="img"
-                                                                                    class="PageLeftArrowIcon__leftArrow___rOUht"
-                                                                                    focusable="false">
-                                                                                    <path fill="#bbb9ac" d="M1.16,7.142C1.157,7.15,1.155,7.158,1.151,7.166c-0.038,0.077-0.07,0.157-0.095,0.239
- C1.051,7.423,1.05,7.443,1.046,7.461c-0.018,0.071-0.033,0.143-0.04,0.215C1.001,7.721,1.005,7.767,1.004,7.813
- C1.005,7.859,1.001,7.904,1.006,7.95c0.007,0.072,0.022,0.144,0.04,0.215C1.05,8.183,1.051,8.203,1.057,8.221
- c0.024,0.083,0.057,0.163,0.097,0.242C1.156,8.47,1.158,8.477,1.16,8.483c0.043,0.083,0.095,0.162,0.153,0.238
- c0.001,0.001,0.002,0.003,0.003,0.004c0.01,0.013,0.016,0.026,0.026,0.039l5.054,6.023c0.523,0.623,1.453,0.705,2.076,0.181
- c0.624-0.522,0.705-1.452,0.182-2.076L4.393,7.813l4.262-5.08C9.178,2.11,9.096,1.18,8.473,0.657
- C7.85,0.135,6.919,0.215,6.396,0.838L1.343,6.863C1.332,6.875,1.326,6.888,1.317,6.901C1.314,6.904,1.313,6.907,1.311,6.91
- C1.253,6.984,1.202,7.062,1.16,7.142z"></path>
-                                                                                </svg>
-                                                                                <span
-                                                                                    data-localized="details.transaction.pagination.previous">Previous</span>
-                                                                            </button>
+                                                                            @if ($userTransactions->previousPageUrl())
+                                                                            <a href="{{ $userTransactions->previousPageUrl() }}" rel="prev">
+                                                                                <button
+                                                                                    class="TransactionPages__nav-link___AOyJw inline-flex gap-2 items-center"
+                                                                                    data-testid="pagination-next"
+                                                                                    aria-disabled="false">
+                                                                                    <svg x="0px" y="0px" width="9.3px" style="transform: rotate(180deg); padding-right: 5px;
+                                                                                    "
+                                                                                        height="15.6px"
+                                                                                        viewBox="0 0 9.3 15.6"
+                                                                                        enable-background="new 0 0 9.3 15.6"
+                                                                                        aria-hidden="true" role="img"
+                                                                                        class="PageRightArrowIcon__rightArrow___HYk6m"
+                                                                                        focusable="false">
+                                                                                        <path fill="#00698c" d="M7.841,8.168c0.003-0.006,0.004-0.012,0.007-0.018c0.04-0.08,0.072-0.16,0.097-0.244
+                                                                                        C7.95,7.889,7.951,7.87,7.956,7.851C7.973,7.78,7.988,7.708,7.995,7.636C8,7.59,7.996,7.545,7.997,7.5
+                                                                                        C7.996,7.454,8,7.408,7.995,7.362C7.988,7.29,7.973,7.219,7.956,7.148C7.951,7.129,7.95,7.11,7.944,7.091
+                                                                                        C7.92,7.008,7.888,6.928,7.848,6.849C7.845,6.842,7.844,6.835,7.841,6.83C7.798,6.747,7.746,6.667,7.688,6.591
+                                                                                        C7.687,6.59,7.686,6.588,7.685,6.587c-0.01-0.013-0.016-0.026-0.026-0.039L2.604,0.525C2.082-0.098,1.152-0.179,0.528,0.344
+                                                                                        c-0.624,0.522-0.704,1.453-0.182,2.077L4.608,7.5l-4.262,5.078c-0.522,0.624-0.441,1.553,0.183,2.077
+                                                                                        c0.623,0.522,1.554,0.441,2.076-0.183L7.658,8.45c0.011-0.012,0.017-0.025,0.026-0.039C7.686,8.41,7.686,8.409,7.687,8.408
+                                                                                        C7.746,8.332,7.798,8.252,7.841,8.168z"></path>
+                                                                                    </svg>
+                                                                                    <span
+                                                                                        data-localized="details.transaction.pagination.next">Previous</span>
+                                                                                </button>
+                                                                            </a>
+                                                                            @else 
+                                                                                <button
+                                                                                    class="TransactionPages__nav-link___AOyJw TransactionPages__disabled___iOSgu inline-flex gap-2 items-center"
+                                                                                    data-testid="pagination-previous" disabled="">
+                                                                                    
+                                                                                    <svg x="0px" y="0px" width="9.3px"
+                                                                                        height="15.6px"
+                                                                                        viewBox="0 0 9.3 15.6"
+                                                                                        enable-background="new 0 0 9.3 15.6"
+                                                                                        aria-hidden="true" role="img"
+                                                                                        class="PageLeftArrowIcon__leftArrow___rOUht"
+                                                                                        focusable="false">
+                                                                                        <path fill="#bbb9ac" d="M1.16,7.142C1.157,7.15,1.155,7.158,1.151,7.166c-0.038,0.077-0.07,0.157-0.095,0.239
+                                                                                        C1.051,7.423,1.05,7.443,1.046,7.461c-0.018,0.071-0.033,0.143-0.04,0.215C1.001,7.721,1.005,7.767,1.004,7.813
+                                                                                        C1.005,7.859,1.001,7.904,1.006,7.95c0.007,0.072,0.022,0.144,0.04,0.215C1.05,8.183,1.051,8.203,1.057,8.221
+                                                                                        c0.024,0.083,0.057,0.163,0.097,0.242C1.156,8.47,1.158,8.477,1.16,8.483c0.043,0.083,0.095,0.162,0.153,0.238
+                                                                                        c0.001,0.001,0.002,0.003,0.003,0.004c0.01,0.013,0.016,0.026,0.026,0.039l5.054,6.023c0.523,0.623,1.453,0.705,2.076,0.181
+                                                                                        c0.624-0.522,0.705-1.452,0.182-2.076L4.393,7.813l4.262-5.08C9.178,2.11,9.096,1.18,8.473,0.657
+                                                                                        C7.85,0.135,6.919,0.215,6.396,0.838L1.343,6.863C1.332,6.875,1.326,6.888,1.317,6.901C1.314,6.904,1.313,6.907,1.311,6.91
+                                                                                        C1.253,6.984,1.202,7.062,1.16,7.142z"></path>
+                                                                                    </svg>
+                                                                                    <span
+                                                                                        data-localized="details.transaction.pagination.previous">Previous</span>
+                                                                                </button>
+                                                                            @endif
                                                                         </li>
                                                                         <li>
-                                                                            <button
-                                                                                class="TransactionPages__nav-link___AOyJw inline-flex items-center gap-2"
-                                                                                data-testid="pagination-next"
-                                                                                aria-disabled="false">
-                                                                                <span
-                                                                                    data-localized="details.transaction.pagination.next">Next</span>
-                                                                                <svg x="0px" y="0px" width="9.3px"
-                                                                                    height="15.6px"
-                                                                                    viewBox="0 0 9.3 15.6"
-                                                                                    enable-background="new 0 0 9.3 15.6"
-                                                                                    aria-hidden="true" role="img"
-                                                                                    class="PageRightArrowIcon__rightArrow___HYk6m"
-                                                                                    focusable="false">
-                                                                                    <path fill="#00698c" d="M7.841,8.168c0.003-0.006,0.004-0.012,0.007-0.018c0.04-0.08,0.072-0.16,0.097-0.244
- C7.95,7.889,7.951,7.87,7.956,7.851C7.973,7.78,7.988,7.708,7.995,7.636C8,7.59,7.996,7.545,7.997,7.5
- C7.996,7.454,8,7.408,7.995,7.362C7.988,7.29,7.973,7.219,7.956,7.148C7.951,7.129,7.95,7.11,7.944,7.091
- C7.92,7.008,7.888,6.928,7.848,6.849C7.845,6.842,7.844,6.835,7.841,6.83C7.798,6.747,7.746,6.667,7.688,6.591
- C7.687,6.59,7.686,6.588,7.685,6.587c-0.01-0.013-0.016-0.026-0.026-0.039L2.604,0.525C2.082-0.098,1.152-0.179,0.528,0.344
- c-0.624,0.522-0.704,1.453-0.182,2.077L4.608,7.5l-4.262,5.078c-0.522,0.624-0.441,1.553,0.183,2.077
- c0.623,0.522,1.554,0.441,2.076-0.183L7.658,8.45c0.011-0.012,0.017-0.025,0.026-0.039C7.686,8.41,7.686,8.409,7.687,8.408
- C7.746,8.332,7.798,8.252,7.841,8.168z"></path>
-                                                                                </svg>
-                                                                            </button>
+                                                                            @if ($userTransactions->nextPageUrl())
+                                                                                <a href="{{ $userTransactions->nextPageUrl() }}" rel="next">
+                                                                                    <button
+                                                                                        class="TransactionPages__nav-link___AOyJw inline-flex gap-2 items-center"
+                                                                                        data-testid="pagination-next"
+                                                                                        aria-disabled="false">
+                                                                                        <span
+                                                                                            data-localized="details.transaction.pagination.next">Next</span>
+                                                                                        <svg x="0px" y="0px" width="9.3px"
+                                                                                            height="15.6px"
+                                                                                            viewBox="0 0 9.3 15.6"
+                                                                                            enable-background="new 0 0 9.3 15.6"
+                                                                                            aria-hidden="true" role="img"
+                                                                                            class="PageRightArrowIcon__rightArrow___HYk6m"
+                                                                                            focusable="false">
+                                                                                            <path fill="#00698c" d="M7.841,8.168c0.003-0.006,0.004-0.012,0.007-0.018c0.04-0.08,0.072-0.16,0.097-0.244
+                                                                                            C7.95,7.889,7.951,7.87,7.956,7.851C7.973,7.78,7.988,7.708,7.995,7.636C8,7.59,7.996,7.545,7.997,7.5
+                                                                                            C7.996,7.454,8,7.408,7.995,7.362C7.988,7.29,7.973,7.219,7.956,7.148C7.951,7.129,7.95,7.11,7.944,7.091
+                                                                                            C7.92,7.008,7.888,6.928,7.848,6.849C7.845,6.842,7.844,6.835,7.841,6.83C7.798,6.747,7.746,6.667,7.688,6.591
+                                                                                            C7.687,6.59,7.686,6.588,7.685,6.587c-0.01-0.013-0.016-0.026-0.026-0.039L2.604,0.525C2.082-0.098,1.152-0.179,0.528,0.344
+                                                                                            c-0.624,0.522-0.704,1.453-0.182,2.077L4.608,7.5l-4.262,5.078c-0.522,0.624-0.441,1.553,0.183,2.077
+                                                                                            c0.623,0.522,1.554,0.441,2.076-0.183L7.658,8.45c0.011-0.012,0.017-0.025,0.026-0.039C7.686,8.41,7.686,8.409,7.687,8.408
+                                                                                            C7.746,8.332,7.798,8.252,7.841,8.168z"></path>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </a>
+                                                                                @else
+                                                                                <button
+                                                                                    class="TransactionPages__nav-link___AOyJw TransactionPages__disabled___iOSgu inline-flex gap-2 items-center"
+                                                                                    
+                                                                                    aria-disabled="true"
+                                                                                    data-testid="pagination-first"
+                                                                                    disabled="">
+                                                                                    <span data-localized="details.transaction.pagination.first">Next</span>
+                                                                                    <svg x="0px" y="0px" width="9.3px"
+                                                                                        style="transform: rotate(180deg); "
+                                                                                        height="15.6px"
+                                                                                        viewBox="0 0 9.3 15.6"
+                                                                                        enable-background="new 0 0 9.3 15.6"
+                                                                                        aria-hidden="true" role="img"
+                                                                                        class="PageLeftArrowIcon__leftArrow___rOUht"
+                                                                                        focusable="false">
+                                                                                        <path fill="#bbb9ac" d="M1.16,7.142C1.157,7.15,1.155,7.158,1.151,7.166c-0.038,0.077-0.07,0.157-0.095,0.239
+                                                                                        C1.051,7.423,1.05,7.443,1.046,7.461c-0.018,0.071-0.033,0.143-0.04,0.215C1.001,7.721,1.005,7.767,1.004,7.813
+                                                                                        C1.005,7.859,1.001,7.904,1.006,7.95c0.007,0.072,0.022,0.144,0.04,0.215C1.05,8.183,1.051,8.203,1.057,8.221
+                                                                                        c0.024,0.083,0.057,0.163,0.097,0.242C1.156,8.47,1.158,8.477,1.16,8.483c0.043,0.083,0.095,0.162,0.153,0.238
+                                                                                        c0.001,0.001,0.002,0.003,0.003,0.004c0.01,0.013,0.016,0.026,0.026,0.039l5.054,6.023c0.523,0.623,1.453,0.705,2.076,0.181
+                                                                                        c0.624-0.522,0.705-1.452,0.182-2.076L4.393,7.813l4.262-5.08C9.178,2.11,9.096,1.18,8.473,0.657
+                                                                                        C7.85,0.135,6.919,0.215,6.396,0.838L1.343,6.863C1.332,6.875,1.326,6.888,1.317,6.901C1.314,6.904,1.313,6.907,1.311,6.91
+                                                                                        C1.253,6.984,1.202,7.062,1.16,7.142z"></path>
+                                                                                    </svg>
+                                                                                    
+                                                                                </button>
+                                                                                @endif
                                                                         </li>
                                                                     </ul>
                                                                 </div>
