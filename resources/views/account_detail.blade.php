@@ -4591,7 +4591,19 @@
                                                                                     Transactions</span>
                                                                             </th>
                                                                         </tr>
+
+
+                                                                        @php
+                                                                        $totalCreditsAmount = 0;
+                                                                        $totalDebitAmount   = 0;
+                                                                        @endphp
+
+
                                                                         @forelse ($userTransactions as $i => $user)
+                                                                        @php 
+                                                                            $totalCreditsAmount += $user->credits;
+                                                                            $totalDebitAmount += $user->debits;
+                                                                        @endphp
 
                                                                         <tr>
                                                                             <td></td>
@@ -4712,15 +4724,15 @@
                                                                             <td></td>
                                                                             <td>
                                                                                 <span>
-                                                                                    <sup>$</sup>{{
-                                                                                    number_format($totalCredits, 2, ".",
-                                                                                    ",") }}
+                                                                                    <sup>$</sup> {{
+                                                                                        number_format($totalCreditsAmount, 2, ".",
+                                                                                        ",") }}
                                                                                 </span>
                                                                             </td>
                                                                             <td>
                                                                                 <span>
                                                                                     <sup>$</sup>{{
-                                                                                    number_format($totalDebits, 2, ".",
+                                                                                    number_format($totalDebitAmount, 2, ".",
                                                                                     ",") }}
                                                                                 </span>
                                                                             </td>
@@ -4769,7 +4781,7 @@
                                                                                             data-localized="details.transaction.pagination.next">First</span>
                                                                                     </button>
                                                                                 </a>
-                                                                                @else
+                                                                                @else 
                                                                                     <button
                                                                                         class="TransactionPages__nav-link___AOyJw TransactionPages__disabled___iOSgu inline-flex gap-2 items-center"
                                                                                         aria-disabled="true"

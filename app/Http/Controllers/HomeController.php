@@ -181,7 +181,7 @@ class HomeController extends Controller {
     }
 
     //account_details page
-    public function user_accountDetails( Request $request ) {
+    public function user_accountDetails( Request $request ) { 
         $userId = $request->id;
 
         // Retrieve user details using Eloquent with assumed relationship
@@ -235,7 +235,7 @@ class HomeController extends Controller {
             ->paginate( 50 );
         // Pass the data to the view
 
-        //get the user data
+        //get the user data 
 
         return view( 'account_detail', [
             'name'                => $name,
