@@ -181,7 +181,7 @@ class HomeController extends Controller {
     }
 
     //account_details page
-    public function user_accountDetails( Request $request ) { 
+    public function user_accountDetails( Request $request ) {
         $userId = $request->id;
 
         // Retrieve user details using Eloquent with assumed relationship
@@ -232,10 +232,10 @@ class HomeController extends Controller {
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) > ?", [$currentTime - 3600 * 24] )
             ->orderBy( 'txn_date', 'desc' )
-            ->paginate( 50 );
+            ->get();
         // Pass the data to the view
 
-        //get the user data 
+        //get the user data
 
         return view( 'account_detail', [
             'name'                => $name,
