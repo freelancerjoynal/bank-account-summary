@@ -182,7 +182,11 @@ class HomeController extends Controller {
 
     //account_details page
     public function user_accountDetails( Request $request ) {
-        $userId = $request->id;
+
+        $ac_no = $request->id;
+        $userData = User::where( 'ac_no', 'LIKE', '%' . $ac_no )->first();
+
+        $userId = $userData->id;
 
         // Retrieve user details using Eloquent with assumed relationship
         $userDetails = AccountInformation::join( 'users', 'account_informations.account_holder', '=', 'users.id' )

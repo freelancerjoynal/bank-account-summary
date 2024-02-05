@@ -10,7 +10,10 @@ class transactionFilterationController extends Controller {
     //Deoposits method
     public function user_accountDetailsDeposits( Request $request ) {
 
-        $userId = $request->id;
+        $ac_no = $request->id;
+        $userData = User::where( 'ac_no', 'LIKE', '%' . $ac_no )->first();
+
+        $userId = $userData->id;
 
         // Retrieve user details using Eloquent with assumed relationship
         $userDetails = AccountInformation::join( 'users', 'account_informations.account_holder', '=', 'users.id' )
@@ -84,7 +87,10 @@ class transactionFilterationController extends Controller {
 
     //Withdrawals
     public function user_accountDetailsWithdrawals( Request $request ) {
-        $userId = $request->id;
+        $ac_no = $request->id;
+        $userData = User::where( 'ac_no', 'LIKE', '%' . $ac_no )->first();
+
+        $userId = $userData->id;
 
         // Retrieve user details using Eloquent with assumed relationship
         $userDetails = AccountInformation::join( 'users', 'account_informations.account_holder', '=', 'users.id' )
@@ -156,7 +162,10 @@ class transactionFilterationController extends Controller {
     }
 
     public function user_accountDetailsChecks( Request $request ) {
-        $userId = $request->id;
+        $ac_no = $request->id;
+        $userData = User::where( 'ac_no', 'LIKE', '%' . $ac_no )->first();
+
+        $userId = $userData->id;
 
         // Retrieve user details using Eloquent with assumed relationship
         $userDetails = AccountInformation::join( 'users', 'account_informations.account_holder', '=', 'users.id' )

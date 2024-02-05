@@ -4007,7 +4007,7 @@
                                                                                             style="left: 0px; display: flex; flex-flow: row; align-items: center;">
                                                                                             <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
-                                                                                                <a href="{{route('accounts.details', ['id' => $userId] )}}">
+                                                                                                <a href="{{route('accounts.details', ['id' => substr($ac_no, -4)  ] )}}"> 
                                                                                                     <button id="filter-ALL"
                                                                                                     type="button"
                                                                                                     aria-label=""
@@ -4024,7 +4024,7 @@
                                                                                             </li>
                                                                                             <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details.deposits' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
-                                                                                                <a href="{{ route('accounts.details.deposits', ['id' => $userId]) }}">
+                                                                                                <a href="{{ route('accounts.details.deposits', ['id' => substr($ac_no, -4)]) }}">
                                                                                                     <button
                                                                                                     id="filter-DEPOSIT_TRANSACTIONS_FILTER"
                                                                                                     type="button"
@@ -4042,7 +4042,7 @@
                                                                                             </li>
                                                                                             <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details.checks' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
-                                                                                                <a href="{{ route('accounts.details.checks', ['id' => $userId]) }}">
+                                                                                                <a href="{{ route('accounts.details.checks', ['id' => substr($ac_no, -4)]) }}">
                                                                                                 <button
                                                                                                     id="filter-CHECK_TRANSACTIONS_FILTER"
                                                                                                     type="button"
@@ -4060,7 +4060,7 @@
                                                                                             </li>
                                                                                             <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details.withdrawals' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
-                                                                                                <a href="{{ route('accounts.details.withdrawals', ['id' => $userId]) }}">
+                                                                                                <a href="{{ route('accounts.details.withdrawals', ['id' => substr($ac_no, -4) ]) }}">
                                                                                                 
                                                                                                     <button
                                                                                                         id="filter-WITHDRAWALS_FILTER"
