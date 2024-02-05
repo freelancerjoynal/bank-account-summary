@@ -226,19 +226,19 @@ class HomeController extends Controller {
         $userTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) < ?", [$currentTime - 3600 * 24] )
             ->orderBy( 'txn_date', 'desc' )
-            ->paginate( 8 );
+            ->paginate( 30 );
 
         // pending transaction
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) > ?", [$currentTime - 3600 * 24] )
-            ->orderBy( 'txn_date', 'desc' )
-            ->paginate( 50 );
+            ->orderBy( 'txn_date', 'desc' );
         // Pass the data to the view
 
         //get the user data
 
         return view( 'account_detail', [
             'name'                => $name,
+            'userId'              => $userId,
             'ac_no'               => $ac_no,
             'totalCredits'        => $totalCredits,
             'totalDebits'         => $totalDebits,

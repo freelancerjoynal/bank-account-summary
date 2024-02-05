@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\profileDeleteController;
 use App\Http\Controllers\statementController;
+use App\Http\Controllers\transactionFilterationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,6 +48,10 @@ Route::get( '/edocs/start', [statementController::class, 'viewStatements'] )->na
 // })->name('account_detail');
 Route::get( '/accounts', [HomeController::class, 'allAcounts'] )->name( 'accounts' );
 Route::get( '/accounts/{id}', [HomeController::class, 'user_accountDetails'] )->name( 'accounts.details' );
+
+//Deposits only.
+Route::get( '/accounts/deposits/{id}', [transactionFilterationController::class, 'user_accountDetailsDeposits'] )->name( 'accounts.details.deposits' );
+Route::get( '/accounts/withdrawals/{id}', [transactionFilterationController::class, 'user_accountDetailsWithdrawals'] )->name( 'accounts.details.withdrawals' );
 
 Route::get( '/account_detail', [HomeController::class, 'account_detail'] )->name( 'account_detail' );
 // Route::get('/account_detail', [HomeController::class, 'user_accountDetails'])->name('user_account_detail');

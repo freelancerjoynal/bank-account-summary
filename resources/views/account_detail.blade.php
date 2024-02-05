@@ -4007,7 +4007,8 @@
                                                                                             style="left: 0px; display: flex; flex-flow: row; align-items: center;">
                                                                                             <li class="FilterRibbon__item___yYOur FilterRibbon__selected___YSIYy"
                                                                                                 role="presentation">
-                                                                                                <button id="filter-ALL"
+                                                                                                <a href="{{route('accounts.details', ['id' => $userId] )}}">
+                                                                                                    <button id="filter-ALL"
                                                                                                     type="button"
                                                                                                     aria-label=""
                                                                                                     class="LegacyButton__plain___cENCM LegacyButton__desktop___uj17k WFButtonLink__buttonLink___wfwiz"
@@ -4019,10 +4020,12 @@
                                                                                                     <span
                                                                                                         data-localized="details.activity.transactions">Transactions</span>
                                                                                                 </button>
+                                                                                                </a>
                                                                                             </li>
                                                                                             <li class="FilterRibbon__item___yYOur"
                                                                                                 role="presentation">
-                                                                                                <button
+                                                                                                <a href="{{ route('accounts.details.deposits', ['id' => $userId]) }}">
+                                                                                                    <button
                                                                                                     id="filter-DEPOSIT_TRANSACTIONS_FILTER"
                                                                                                     type="button"
                                                                                                     aria-label=""
@@ -4035,6 +4038,7 @@
                                                                                                     <span
                                                                                                         data-localized="details.transactions.deposits">Deposits</span>
                                                                                                 </button>
+                                                                                                </a>
                                                                                             </li>
                                                                                             <li class="FilterRibbon__item___yYOur"
                                                                                                 role="presentation">
@@ -4054,19 +4058,23 @@
                                                                                             </li>
                                                                                             <li class="FilterRibbon__item___yYOur"
                                                                                                 role="presentation">
-                                                                                                <button
-                                                                                                    id="filter-WITHDRAWALS_FILTER"
-                                                                                                    type="button"
-                                                                                                    aria-label=""
-                                                                                                    class="LegacyButton__plain___cENCM LegacyButton__desktop___uj17k WFButtonLink__buttonLink___wfwiz"
-                                                                                                    data-accessible-id="EBZXAJYM"
-                                                                                                    aria-controls="panel-WITHDRAWALS_FILTER"
-                                                                                                    aria-selected="false"
-                                                                                                    tabindex="-1"
-                                                                                                    role="tab">
-                                                                                                    <span
-                                                                                                        data-localized="details.transactions.withdrawals">Withdrawals</span>
-                                                                                                </button>
+                                                                                                <a href="{{ route('accounts.details.withdrawals', ['id' => $userId]) }}">
+                                                                                                
+                                                                                                    <button
+                                                                                                        id="filter-WITHDRAWALS_FILTER"
+                                                                                                        type="button"
+                                                                                                        aria-label=""
+                                                                                                        class="LegacyButton__plain___cENCM LegacyButton__desktop___uj17k WFButtonLink__buttonLink___wfwiz"
+                                                                                                        data-accessible-id="EBZXAJYM"
+                                                                                                        aria-controls="panel-WITHDRAWALS_FILTER"
+                                                                                                        aria-selected="false"
+                                                                                                        tabindex="-1"
+                                                                                                        role="tab">
+                                                                                                        <span
+                                                                                                            data-localized="details.transactions.withdrawals">Withdrawals</span>
+                                                                                                    </button>
+
+                                                                                                </a>
                                                                                             </li>
                                                                                             <li class="FilterRibbon__item___yYOur"
                                                                                                 role="presentation">

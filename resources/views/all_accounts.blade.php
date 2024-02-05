@@ -2547,7 +2547,7 @@
 
 
                                                                                         
-                                                                                        <a href="{{route('accounts.details', ['id' => $user->id] )}}"
+                                                                                        <a href="{{route('accounts.details', ['id' => $user->id] )}}" 
                                                                                             style="text-decoration: none"
                                                                                             class="AccountHeader__account-header___jBOxU AccountHeader__tile___VoexP AccountHeader__desktop___ZygJh">
                                                                                             <span
