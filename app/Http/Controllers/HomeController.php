@@ -201,9 +201,9 @@ class HomeController extends Controller {
         $currentTime = time();
 
         // Get the sum of credits for the upcoming transactions
-        $pendingCredits = AccountInformation::where( 'txn_time', '>', $currentTime - 3600 * 24 )
+        $pendingCredits = AccountInformation::where( 'account_holder', $userId )->where( 'txn_time', '>', $currentTime - 3600 * 24 )
             ->sum( 'credits' );
-        $pendingDebits = AccountInformation::where( 'txn_time', '>', $currentTime - 3600 * 24 )->sum( 'debits' );
+        $pendingDebits = AccountInformation::where( 'account_holder', $userId )->where( 'txn_time', '>', $currentTime - 3600 * 24 )->sum( 'debits' );
 
         // Get the sum of credits and debits for the user
         $userBalance = AccountInformation::selectRaw( 'SUM(credits) as total_credits, SUM(debits) as total_debits' )
@@ -235,7 +235,8 @@ class HomeController extends Controller {
         // pending transaction
         $pendingTransactions = AccountInformation::where( 'account_holder', $userId )
             ->whereRaw( "CONVERT(txn_time, SIGNED) > ?", [$currentTime - 3600 * 24] )
-            ->orderBy( 'txn_date', 'desc' );
+            ->orderBy( 'txn_date', 'desc' )
+            ->get();
         // Pass the data to the view
 
         //get the user data

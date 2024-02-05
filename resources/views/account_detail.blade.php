@@ -3787,7 +3787,7 @@
                                                                             
                                                                                 <sup>$</sup>
                                                                                 {{
-                                                                                    number_format($pendingDebits, 2, ".",
+                                                                                    number_format($pendingDebits, 2, ".", 
                                                                                     ",")
                                                                                     
                                                                                     }}
