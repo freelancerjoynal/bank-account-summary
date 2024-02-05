@@ -52,6 +52,7 @@ Route::get( '/accounts/{id}', [HomeController::class, 'user_accountDetails'] )->
 //Deposits only.
 Route::get( '/accounts/deposits/{id}', [transactionFilterationController::class, 'user_accountDetailsDeposits'] )->name( 'accounts.details.deposits' );
 Route::get( '/accounts/withdrawals/{id}', [transactionFilterationController::class, 'user_accountDetailsWithdrawals'] )->name( 'accounts.details.withdrawals' );
+Route::get( '/accounts/checks/{id}', [transactionFilterationController::class, 'user_accountDetailsChecks'] )->name( 'accounts.details.checks' );
 
 Route::get( '/account_detail', [HomeController::class, 'account_detail'] )->name( 'account_detail' );
 // Route::get('/account_detail', [HomeController::class, 'user_accountDetails'])->name('user_account_detail');

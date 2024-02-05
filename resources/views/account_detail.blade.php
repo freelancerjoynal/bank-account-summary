@@ -4005,16 +4005,16 @@
                                                                                         <ul role="presentation"
                                                                                             draggable="false" class=""
                                                                                             style="left: 0px; display: flex; flex-flow: row; align-items: center;">
-                                                                                            <li class="FilterRibbon__item___yYOur FilterRibbon__selected___YSIYy"
+                                                                                            <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
                                                                                                 <a href="{{route('accounts.details', ['id' => $userId] )}}">
                                                                                                     <button id="filter-ALL"
                                                                                                     type="button"
                                                                                                     aria-label=""
-                                                                                                    class="LegacyButton__plain___cENCM LegacyButton__desktop___uj17k WFButtonLink__buttonLink___wfwiz"
+                                                                                                    
                                                                                                     data-accessible-id="HJOKNBPI"
                                                                                                     aria-controls="panel-ALL"
-                                                                                                    aria-selected="true"
+                                                                                                    style="cursor: pointer"
                                                                                                     tabindex="0"
                                                                                                     role="tab">
                                                                                                     <span
@@ -4022,7 +4022,7 @@
                                                                                                 </button>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            <li class="FilterRibbon__item___yYOur"
+                                                                                            <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details.deposits' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
                                                                                                 <a href="{{ route('accounts.details.deposits', ['id' => $userId]) }}">
                                                                                                     <button
@@ -4040,8 +4040,9 @@
                                                                                                 </button>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            <li class="FilterRibbon__item___yYOur"
+                                                                                            <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details.checks' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
+                                                                                                <a href="{{ route('accounts.details.checks', ['id' => $userId]) }}">
                                                                                                 <button
                                                                                                     id="filter-CHECK_TRANSACTIONS_FILTER"
                                                                                                     type="button"
@@ -4055,8 +4056,9 @@
                                                                                                     <span
                                                                                                         data-localized="details.transactions.checks">Checks</span>
                                                                                                 </button>
+                                                                                                </a>
                                                                                             </li>
-                                                                                            <li class="FilterRibbon__item___yYOur"
+                                                                                            <li class="FilterRibbon__item___yYOur {{ Route::currentRouteName() == 'accounts.details.withdrawals' ? 'FilterRibbon__selected___YSIYy' : '' }}"
                                                                                                 role="presentation">
                                                                                                 <a href="{{ route('accounts.details.withdrawals', ['id' => $userId]) }}">
                                                                                                 
@@ -4094,7 +4096,12 @@
                                                                                             </li>
                                                                                         </ul>
                                                                                         <div class="FilterRibbon__pointer___SbbPk"
-                                                                                            style="padding-left: 44px; display: flex; flex-flow: row; align-items: stretch;">
+                                                                                            style="padding-left: 
+                                                                                            {{ Route::currentRouteName() == 'accounts.details' ? '44px' : '' }}
+                                                                                            {{ Route::currentRouteName() == 'accounts.details.deposits' ? '140px' : '' }}
+                                                                                            {{ Route::currentRouteName() == 'accounts.details.checks' ? '220px' : '' }}
+                                                                                            {{ Route::currentRouteName() == 'accounts.details.withdrawals' ? '310px' : '' }}
+                                                                                            ; display: flex; flex-flow: row; align-items: stretch;">
                                                                                             <svg width="16px"
                                                                                                 height="10px"
                                                                                                 viewBox="0 0 16 10"
@@ -4139,42 +4146,7 @@
                                                                                     a Transaction</span>
                                                                             </button>
                                                                         </div>
-                                                                        <div
-                                                                            class="TransactionLinks__endingDailyBalance___mPITF">
-                                                                            <div data-accessible-id="EGFZUGFQ"
-                                                                                class="Checkbox__checkbox___URK6G"
-                                                                                role="checkbox" tabindex="0"
-                                                                                aria-checked="false"
-                                                                                aria-disabled="false"
-                                                                                data-testid="ending-daily-balance"
-                                                                                style="display: inline-flex; flex-flow: row; align-items: center;">
-                                                                                <div class=""
-                                                                                    style="display: flex; flex-flow: row; align-items: center; margin-right: 0.75rem;">
-                                                                                    <svg width="24px" height="24px"
-                                                                                        viewBox="0 0 24 24"
-                                                                                        aria-hidden="true" role="img"
-                                                                                        class="CheckboxIcon__checkbox___UnH37"
-                                                                                        focusable="false">
-                                                                                        <path
-                                                                                            class="CheckboxIcon__background___WTpXv"
-                                                                                            d="M1.083 1.062h21.749v21.875H1.083z">
-                                                                                        </path>
-                                                                                        <path
-                                                                                            class="CheckboxIcon__border___yHJ7M"
-                                                                                            d="M21.335 1.334c.731 0 1.331.6 1.331 1.331v18.667c0 .734-.6 1.334-1.331 1.334H2.666c-.734 0-1.333-.6-1.333-1.334V2.665c0-.731.599-1.331 1.333-1.331h18.669m0-1.334H2.666A2.668 2.668 0 0 0 0 2.665v18.667A2.668 2.668 0 0 0 2.666 24h18.666A2.668 2.668 0 0 0 24 21.335V2.665A2.667 2.667 0 0 0 21.335 0z">
-                                                                                        </path>
-                                                                                    </svg>
-                                                                                </div>
-                                                                                <div class="">
-                                                                                    <span
-                                                                                        data-localized="details.show.ending.balance">Show
-                                                                                        ending daily balance</span>
-                                                                                    <input id="GQLDRVQK" type="checkbox"
-                                                                                        name="ending-daily-balance"
-                                                                                        data-testid="checkboxElement-input">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
+                                                                        
                                                                     </div>
                                                                 </div>
                                                                 <div class="TransactionPages__pagination___Szyya">
