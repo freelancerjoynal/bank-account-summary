@@ -4571,7 +4571,16 @@
                                                                                     Transactions</span>
                                                                             </th>
                                                                         </tr>
+                                                                        @php
+                                                                        $countedTotalCredit = 0;
+                                                                        $countedTotalDebit = 0;
+                                                                        @endphp
+
                                                                         @forelse ($userTransactions as $i => $user)
+                                                                        @php
+                                                                        $countedTotalCredit += $user->credits;
+                                                                        $countedTotalDebit += $user->debits;
+                                                                        @endphp
 
                                                                         <tr>
                                                                             <td></td>
@@ -4693,7 +4702,7 @@
                                                                             <td>
                                                                                 @if (Route::currentRouteName() == 'accounts.details.deposits' || Route::currentRouteName() == 'accounts.details')
                                                                                     <span>
-                                                                                        <sup>$</sup>{{ number_format($totalCredits, 2, ".", ",") }}
+                                                                                        <sup>$</sup>{{ number_format($countedTotalCredit, 2, ".", ",") }}
                                                                                     </span>
                                                                                 @endif
 
@@ -4707,7 +4716,7 @@
 
                                                                                 <span>
                                                                                     <sup>$</sup>{{
-                                                                                    number_format($totalDebits, 2, ".",
+                                                                                    number_format($countedTotalDebit, 2, ".",
                                                                                     ",") }}
                                                                                 </span>
 
