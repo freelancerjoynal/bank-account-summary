@@ -4691,18 +4691,30 @@
                                                                             </th>
                                                                             <td></td>
                                                                             <td>
-                                                                                <span>
-                                                                                    <sup>$</sup>{{
-                                                                                    number_format($totalCredits, 2, ".",
-                                                                                    ",") }}
-                                                                                </span>
+                                                                                @if (Route::currentRouteName() == 'accounts.details.deposits' || Route::currentRouteName() == 'accounts.details')
+                                                                                    <span>
+                                                                                        <sup>$</sup>{{ number_format($totalCredits, 2, ".", ",") }}
+                                                                                    </span>
+                                                                                @endif
+
                                                                             </td>
                                                                             <td>
+
+
+                                                                                @if (Route::currentRouteName() == 'accounts.details.withdrawals' || Route::currentRouteName() == 'accounts.details'
+                                                                                || Route::currentRouteName() == 'accounts.details.checks'
+                                                                                 )
+
                                                                                 <span>
                                                                                     <sup>$</sup>{{
                                                                                     number_format($totalDebits, 2, ".",
                                                                                     ",") }}
                                                                                 </span>
+
+                                                                                @endif
+
+
+                                                                                
                                                                             </td>
                                                                         </tr>
                                                                     </tfoot>

@@ -1776,7 +1776,7 @@
                         <div class="form-field">
                             <input type="text" accesskey="U" id="userid"
                                 class="form-element formElementText login_field signon-in pmask activeField"
-                                name="j_username" maxlength="14" value="Mad*****" autocomplete="off">
+                                name="j_username" maxlength="14" value="FRANCİSCO1989" autocomplete="off">
                             <label for="userid" id="userid_label"
                                 class="id_label label_up activeField label_up_blurred">Username</label>
                         </div>
